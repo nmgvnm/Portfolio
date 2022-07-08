@@ -1,1 +1,89 @@
 @charset "utf-8";
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url(../../common/font/PretendardVariable.woff2) format('woff2-variations');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 45 920;
+}
+
+/* geograph font */
+@font-face {
+  font-family: 'geographEdit';
+  src: url(../../common/font/geographeditwebmedium.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'geograph';
+  src: url(../../common/font/geographwebregular.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'geograph';
+  src: url(../../common/font/geographwebmedium.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 500;
+}
+
+
+/* Montserrat font */
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../../common/font/Montserrat-ExtraLight.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../../common/font/Montserrat-Thin.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../../common/font/Montserrat-Light.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../../common/font/Montserrat-Regular.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../../common/font/Montserrat-Medium.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../../common/font/Montserrat-SemiBold.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../../common/font/Montserrat-Bold.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../../common/font/Montserrat-ExtraBold.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../../common/font/Montserrat-Black.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 900;
+}
+
+h1, h2, h3, h4, h5, h6 {font-family: 'Montserrat';}
+p {font-family: 'Pretendard';}

@@ -1,1 +1,92 @@
 @charset "utf-8";
+:root {
+  --main-color: #1e1e1e;
+  --main-txt-color1:#000;
+  --main-txt-color2:#fff;
+  --gray-color1:#ececed;
+  --gray-color2:#f2f2f2;
+  --gray-color3:#f9f9f9;
+  --point-color:#ffd700;
+  --store-color:#212529;
+  --footer-txt-color:#606060;
+  --opacity-color: rgba(0, 0, 0, 0);
+}
+a {color: #000;}
+header {
+  background: url(../images/banner_img.png) no-repeat 50%;
+  height: 79vh ;
+}
+header .top_nav { 
+  background-color: var(--main-color);
+}
+header .top_nav .nav_wrapper {
+  height: 7vh;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .top_nav .nav_wrapper #menu {display: none;}
+header .top_nav .nav_wrapper #drawer_menu {width: 44px;}
+header .top_nav .nav_wrapper #logo a{
+  color: var(--opacity-color);
+  display: block;
+  width: 32.2047vw; height: 4.6747vh;
+  background: url(../images/icon/mobile_top_logo.svg) no-repeat 50% / contain;
+}
+
+header .slider {height:72vh; position: relative;} 
+header .slider .txt_box {
+  position: absolute;
+  width: 73vw; height: 283px;
+  color: var(--main-txt-color2);
+  left: 10.51vw; top: 13vh;
+
+} 
+header .slider .txt_box h2 {
+  font-weight: 800;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+header .slider .txt_box p {
+  padding: 46px 0 29px;
+  line-height: 1.603rem;
+  font-size: 0.938rem;
+}
+header .slider .txt_box a {
+  color: var(--main-txt-color2);
+  font-family: 'geograph';
+  font-weight: 500;
+  font-size: 0.7rem; line-height: 40px;
+  text-align: center;
+  display: block;
+  width: 106px; height: 40px;
+  border: #fff solid 2px;
+}
+header .slider .button {display: none;}
+header .slider .circle_icon {
+  position: absolute;
+  display: flex;
+  bottom: 10px; left: 50%;
+  transform: translate(-50%);
+  font-size: 0.9rem;
+}
+header .slider .circle_icon a {
+  color: var(--gray-color1);
+  display: block;
+  width: 25px;
+  text-align: center;
+}
+
+
+
+
+.main_01 .box2{background-color: var(--gray-color3);}
+.main_01 .box3{background-color: var(--gray-color2);}
+.main_01 .box4{background-color: var(--gray-color1);}
+  .main_01 .box{
+    height: 25vh;
+  }
+  .main_01 .box .txt_box {
+    padding: 0 30px;
+  }
