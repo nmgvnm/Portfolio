@@ -1,17 +1,5 @@
 @charset "utf-8";
-:root {
-  --main-color: #1e1e1e;
-  --main-txt-color1:#000;
-  --main-txt-color2:#fff;
-  --gray-color1:#ececed;
-  --gray-color2:#f2f2f2;
-  --gray-color3:#f9f9f9;
-  --point-color:#ffd700;
-  --store-color:#212529;
-  --footer-txt-color:#606060;
-  --opacity-color: rgba(0, 0, 0, 0);
-}
-a {color: #000;}
+
 header {
   background: url(../images/banner_img.png) no-repeat 50%;
   height: 692px ;
