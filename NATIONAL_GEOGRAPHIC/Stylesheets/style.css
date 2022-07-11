@@ -166,17 +166,26 @@ header .slider .circle_icon a {
 
 
 /* magazine css */
-/* .container_magazine {background-color: aquamarine;} */
+.container_magazine .logo #txt {display: none;}
+.container_magazine {
+  display: grid;
+  grid-template-rows: 390px repeat(4, 213px) 390px repeat(4, 213px);
+}
 .container_magazine .title {
-  height: 390px;
   display: grid;
   place-content: center;
   position: relative;
 }
+
 .container_magazine #magazine { background: url(../images/magazine.png) no-repeat 50% / cover; }
 .container_magazine #traveler { background: url(../images/traveler.png) no-repeat 50% / cover; }
-.container_magazine .box_wrapper .box3 {background: url(../images/magazine_img.png) no-repeat 50% 10% / cover; color: var(--main-txt-color2);}
-.container_magazine .box_wrapper .box6 {background: url(../images/traveler_img.png) no-repeat 50% 60% / cover; color: var(--main-txt-color2);}
+.container_magazine .box3 {background: url(../images/magazine_img.png) no-repeat 50% 10% / cover; color: var(--main-txt-color2);}
+.container_magazine .box6 {background: url(../images/traveler_img.png) no-repeat 50% 60% / cover; color: var(--main-txt-color2);}
+
+/* .container_magazine .box_wrapper .box3 {background: url(../images/magazine_img.png) no-repeat 50% 10% / cover; color: var(--main-txt-color2);}
+.container_magazine .box_wrapper .box6 {background: url(../images/traveler_img.png) no-repeat 50% 60% / cover; color: var(--main-txt-color2);} */
+
+
 .container_magazine .box1 a,
 .container_magazine .box8 a {color: var(--main-txt-color2);}
 .container_magazine .box1,
@@ -192,6 +201,7 @@ header .slider .circle_icon a {
   border: var(--point-color) solid 5px;
   color: var(--main-txt-color2);
 }
+
 .container_magazine .title .wrapper h4 {
   width: 100px;
   font-size: 0.813rem;
@@ -200,18 +210,30 @@ header .slider .circle_icon a {
   text-align: center;
   margin: 20px;
 }
+
 .container_magazine .title .wrapper .logo {
   width: 247px;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
 }
-.container_magazine .box_wrapper {
+
+/* .container_magazine .box_wrapper {
   display: grid;
   grid-template-rows: repeat(4,213px);
-}
+} */
 
-.container_magazine .box_wrapper .box { position: relative;}
+.container_magazine .box { position: relative;}
+.container_magazine .box h2{
+  font-size: 1.875rem;
+  margin-bottom: 10px;
+}
+.container_magazine .box #txt {
+  position: absolute;
+  bottom: 0px;
+  padding: 20px;
+} 
+/* .container_magazine .box_wrapper .box { position: relative;}
 .container_magazine .box_wrapper .box h2{
   font-size: 1.875rem;
   margin-bottom: 10px;
@@ -220,7 +242,7 @@ header .slider .circle_icon a {
   position: absolute;
   bottom: 0px;
   padding: 20px;
-}
+}  */
 
 .store .slider_wrapper .apparel,
 .store .slider_wrapper .gimbal {display: none;}
