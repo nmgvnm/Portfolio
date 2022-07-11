@@ -11,5 +11,7 @@
   --store-color:#212529;
   --footer-txt-color:#606060;
   --opacity-color: rgba(0, 0, 0, 0);
+
+  --point-border:var(--point-color) solid 4.7px;
 }
 a {color: #000;}
