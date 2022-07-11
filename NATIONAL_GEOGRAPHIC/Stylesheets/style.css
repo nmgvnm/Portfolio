@@ -211,4 +211,40 @@ header .slider .circle_icon a {
   bottom: 0px;
   padding: 20px;
 }
-.container_magazine .box_wrapper .box p{}
+
+.store .slider_wrapper .apparel,
+.store .slider_wrapper .gimbal {display: none;}
+
+.store {height: 624px; background-color: var(--main-color); color: var(--main-txt-color2); overflow: hidden;}
+.store > h2 {
+  width: 198px;
+  font-size: 1.548rem;
+  border-right: var(--point-border);
+  border-left: var(--point-border);
+  text-align: center;
+  margin: 60px auto 50px;
+}
+.store .slider_wrapper .box{
+  width: 85.3846vw; height: 333px;
+  background: url(../images/store_mobile.png) no-repeat 50% / cover;
+  margin: 0 auto;
+  position: relative;
+}
+.store .slider_wrapper .box #txt h4 {font-size: 0.813rem;}
+.store .slider_wrapper .box #txt h2 {font-size: 1.25rem; font-weight: 500; font-family: 'Pretendard'; padding: 5px 0;}
+.store .slider_wrapper .box #txt {
+  position: absolute;
+  bottom: 30px; left: 20px;
+}
+
+.store .circle_icon {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.store .circle_icon a {
+  display: block;
+  text-align: center;
+  padding: 5px;
+  color: var(--gray-color1);
+}
