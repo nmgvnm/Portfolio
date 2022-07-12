@@ -1,8 +1,8 @@
 @charset "utf-8";
-@media (min-width:1150px) {
+@media (min-width:768px) {
   /* header css */
   header .slider .button {display: block;}
-  header .top_nav .nav_wrapper #drawer_menu {display: none;}
+  header .top_nav .nav_wrapper #drawer_menu {display: none;} 
 
   header {
     height: 851px;
@@ -63,6 +63,9 @@
   }
   header .slider .circle_icon {bottom: 30px;}
 
+
+
+
   /* main css */
 
   .main_01 {
@@ -83,7 +86,7 @@
 
 
   .main_02 .container_content .box1 {background: url(../images/channl_tb_img2.png) no-repeat 100%  / cover; color: var(--opacity-color); height: 638px;}
-  .main_02 .container_content .box3 {background: url(../images/apparel_tb_img.png) no-repeat 50%  / cover;  color: var(--opacity-color);}
+  .main_02 .container_content .box3 {background: url(../images/apparel_img4.png) no-repeat 50%  / cover;  color: var(--opacity-color); height: 638px}
 
   .main_02 .container_content .txt {
     height: 556px ;
@@ -125,7 +128,6 @@
     position: relative;
   }
   .main_03 .video_box .mobile{
-    background-color: aqua;
     display: flex;
     justify-content: space-between;
   }
@@ -141,13 +143,17 @@
     padding: 0;
   }
   .main_03 video {
-    max-width: 1005.8395px;
-    min-width: 800px;
+   
     position: absolute;
     bottom: 0;
   }
 
-  .container_magazine .logo #txt {display: block;}
+
+
+
+
+  /* magazine css */
+  .container_magazine .title #txt {display: block;}
   .container_magazine .box6 #txt,
   .container_magazine .box3 #txt {display: none;}
 
@@ -161,7 +167,25 @@
     grid-column: 1 / 3;
   }
   .container_magazine .title .wrapper {
-    width: initial; height: initial;
+     height: 1005.674px;
+     position: relative;
+     
+  }
+  .container_magazine .title #txt {
+    position: absolute;
+    bottom: 30px; left: 40px;
+    font-size: 1.472rem;
+    line-height: 2.5rem;
+    
+  }
+  .container_magazine .title .wrapper .logo {
+    width: 52vw;
+    margin-top: 20px;
+  }
+  .container_magazine .title .wrapper h4 {
+    width: 225px;
+    font-size: 1.813rem;
+    margin: 40px 50px;
   }
   .container_magazine .box4 {
     grid-row: 4;
@@ -176,9 +200,38 @@
     grid-row: 8;
   }
 
+
+
+  .container_magazine .box h2 {
+    font-size: 2.5rem;
+    line-height: 3.063rem;
+  }
+  .container_magazine .box a {
+    font-size: 1.25rem;
+  }
+
   
+/* store css */
+.store .slider_wrapper .apparel,
+.store .slider_wrapper .gimbal {display:block;}
+.store .slider_wrapper .apparel{background: url(../images/store_apparel.png) no-repeat 50% / cover;}
+.store .slider_wrapper .gimbal {background: url(../images/store_gimbal.png) no-repeat 50% / cover;}
+
+.store .slider_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 31.9130vw);
+  grid-column-gap: 50px;
+}
+
+.store .slider_wrapper .box {
+  margin: 0 20px;
+}
 
 
+footer {height: 309px; overflow: hidden;}
+footer .wrapper_footer .copyright{margin-top: 50px;}
+footer .wrapper_footer {height: 309px; margin: 30px auto;}
+footer .wrapper_footer .copyright ul {width: 285px;}
 
 
 

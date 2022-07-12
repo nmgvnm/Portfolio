@@ -96,16 +96,13 @@ header .slider .circle_icon a {
 .main_02 {display: grid;}
 .main_02 .container_content .box {height: 422px;}
 .main_02 .container_content .box1 {background: url(../images/channl_tb_img2.png) no-repeat 100%  / cover; color: var(--opacity-color);}
-.main_02 .container_content .box3 {background: url(../images/apperal_img.png) no-repeat 50%  / cover;  color: var(--opacity-color);}
+.main_02 .container_content .box3 {background: url(../images/apparel_img3.png) no-repeat 50%  / cover;  color: var(--opacity-color);}
 
 .main_02 .container_content .txt {
   background-color: var(--main-color);
   color: var(--main-txt-color2);
   position: relative;
   overflow: hidden;
-
-  /* display: grid; */
-  /* place-items: center; */
 }
 .main_02 .container_content .txt_wrapper {
   width: 333px; height: 332px; 
@@ -166,7 +163,7 @@ header .slider .circle_icon a {
 
 
 /* magazine css */
-.container_magazine .logo #txt {display: none;}
+.container_magazine .title #txt {display: none;}
 .container_magazine {
   display: grid;
   grid-template-rows: 390px repeat(4, 213px) 390px repeat(4, 213px);
@@ -212,7 +209,7 @@ header .slider .circle_icon a {
 }
 
 .container_magazine .title .wrapper .logo {
-  width: 247px;
+  width: 60vw;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
@@ -244,6 +241,11 @@ header .slider .circle_icon a {
   padding: 20px;
 }  */
 
+
+
+
+
+/* store css */
 .store .slider_wrapper .apparel,
 .store .slider_wrapper .gimbal {display: none;}
 
@@ -256,9 +258,14 @@ header .slider .circle_icon a {
   text-align: center;
   margin: 60px auto 50px;
 }
-.store .slider_wrapper .box{
-  width: 85.3846vw; height: 333px;
+.store .slider_wrapper {
+  display: grid;
+}
+.store .slider_wrapper .mobile {
   background: url(../images/store_mobile.png) no-repeat 50% / cover;
+}
+.store .slider_wrapper .box{
+  height: 333px; width: 367px;
   margin: 0 auto;
   position: relative;
 }
