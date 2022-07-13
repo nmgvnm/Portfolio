@@ -1,16 +1,14 @@
 @charset "utf-8";
 @media (min-width:1280px) {
   
+  header .slider .slider_txt_box a:hover span {
+    transition: left 0.3s ease, right 0.3s ease;
+  }
 header .slider .slider_txt_box a:hover {
   background-color: #fff;
   color: var(--main-color);
   font-weight: 800;
 }
-
-header .top_nav .nav_wrapper #menu {
-  
-}
-
 
 
 

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalble=no">
+ <title>dd</title>
+ <style>
+  .hover_more_button {color: #000; text-decoration: none; font-size: 1.5rem; font-weight: bold; border: 2px solid #000; border-radius: 3px; display: block; width: 200px; height: 50px; position: relative; overflow: hidden;}
+  .hover_more_button #header_txt {
+    position: absolute;
+    top: 50%; left: 15px;
+    transform: translate(0, -60%);
+  }
+  .hover_more_button #arrow {
+    background-color: #ddd;
+    position: absolute;
+    right: 2px; top: 2px;
+    height: 46px; width: 50px;
+    text-align: center; line-height: 42px;
+    border-radius: 3px;
+  }
+
+
+  .more_button {color: #000; text-decoration: none; font-size: 1.5rem; font-weight: bold; border: 2px solid #000; border-radius: 3px; display: block; width: 200px; height: 50px; position: relative; margin-top: 20px;}
+  .more_button #header_txt {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -60%);
+    width: max-content;
+  }
+  .more_button #arrow {
+    background-color: turquoise;
+    position: absolute;
+    right: -55px; top: 2px;
+    height: 46px; width: 50px;
+    text-align: center; line-height: 42px;
+    border-radius: 3px;
+  }
+
+  .test_more_button {color: #000; text-decoration: none; font-size: 1.5rem; font-weight: bold; border: 2px solid #000; border-radius: 3px; display: block; width: 200px; height: 50px; position: relative; margin-top: 20px; overflow: hidden;}
+  .test_more_button #header_txt {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -60%);
+    width: max-content;
+  }
+  .test_more_button #arrow {
+    background-color: turquoise;
+    position: absolute;
+    right: -55px; top: 2px;
+    height: 46px; width: 50px;
+    text-align: center; line-height: 42px;
+    border-radius: 3px;
+  }
+
+  .test_more_button:hover #header_txt {
+  }
+  .test_more_button:hover #arrow {
+    animation: button ease 0.3s alternate-reverse;
+  }
+  
+  @keyframes button {
+    100% {
+      right: 2px;
+      opacity: 1;
+    }
+  }
+
+
+ </style>
+</head>
+<body>
+
+<a href="#" class="hover_more_button">
+  <span id="header_txt">view more</span>
+  <span id="arrow">→</span>
+</a>
+<a href="#" class="more_button">
+  <span id="header_txt">view more</span>
+  <span id="arrow">→</span>
+</a>
+
+<a href="#" class="test_more_button">
+  <span id="header_txt">view more</span>
+  <span id="arrow">→</span>
+</a>
+
+</body>
+</html>
