@@ -27,24 +27,24 @@ header .top_nav .nav_wrapper #logo a{
 }
 
 header .slider {height:632px; position: relative;} 
-header .slider .txt_box {
+header .slider .slider_txt_box {
   position: absolute;
   width: 285px; height: 283px;
   color: var(--main-txt-color2);
   left: 10.51vw; top: 13vh;
 
 } 
-header .slider .txt_box h2 {
+header .slider .slider_txt_box h2 {
   font-weight: 800;
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
-header .slider .txt_box p {
+header .slider .slider_txt_box p {
   padding: 46px 0 29px;
   line-height: 1.603rem;
   font-size: 0.938rem;
 }
-header .slider .txt_box a {
+header .slider .slider_txt_box a {
   color: var(--main-txt-color2);
   font-family: 'geograph';
   font-weight: 500;
@@ -81,12 +81,12 @@ header .slider .circle_icon a {
   display: grid;
   align-items: center;
 }
-.main_01 .box .txt_box h2 {
+.main_01 .box .main_01_txt_box h2 {
   font-family: 'geograph';
   font-weight: bold;
   font-size: 2.318rem;
 }
-.main_01 .box .txt_box h3 {
+.main_01 .box .main_01_txt_box h3 {
   font-size: 1.711rem;
   padding-bottom: 20px;
 }
@@ -163,7 +163,7 @@ header .slider .circle_icon a {
 
 
 /* magazine css */
-.container_magazine .title #txt {display: none;}
+.container_magazine .title .magazine_txt {display: none;}
 .container_magazine {
   display: grid;
   grid-template-rows: 390px repeat(4, 213px) 390px repeat(4, 213px);
@@ -178,9 +178,6 @@ header .slider .circle_icon a {
 .container_magazine #traveler { background: url(../images/traveler.png) no-repeat 50% / cover; }
 .container_magazine .box3 {background: url(../images/magazine_img.png) no-repeat 50% 10% / cover; color: var(--main-txt-color2);}
 .container_magazine .box6 {background: url(../images/traveler_img.png) no-repeat 50% 60% / cover; color: var(--main-txt-color2);}
-
-/* .container_magazine .box_wrapper .box3 {background: url(../images/magazine_img.png) no-repeat 50% 10% / cover; color: var(--main-txt-color2);}
-.container_magazine .box_wrapper .box6 {background: url(../images/traveler_img.png) no-repeat 50% 60% / cover; color: var(--main-txt-color2);} */
 
 
 .container_magazine .box1 a,
@@ -215,32 +212,24 @@ header .slider .circle_icon a {
   transform: translate(-50%);
 }
 
-/* .container_magazine .box_wrapper {
-  display: grid;
-  grid-template-rows: repeat(4,213px);
-} */
 
-.container_magazine .box { position: relative;}
+.container_magazine .box { position: relative;  cursor: pointer;}
 .container_magazine .box h2{
   font-size: 1.875rem;
   margin-bottom: 10px;
 }
-.container_magazine .box #txt {
+.container_magazine .box .magazine_txt {
   position: absolute;
   bottom: 0px;
   padding: 20px;
 } 
-/* .container_magazine .box_wrapper .box { position: relative;}
-.container_magazine .box_wrapper .box h2{
-  font-size: 1.875rem;
-  margin-bottom: 10px;
+.container_magazine .box .magazine_txt img {
+  width: 40px;
+  margin-left: 10px;
+  margin-top: 2px;
 }
-.container_magazine .box_wrapper .box #txt {
-  position: absolute;
-  bottom: 0px;
-  padding: 20px;
-}  */
-
+.container_magazine .box3,
+.container_magazine .box6 {cursor: auto;}
 
 
 
@@ -269,9 +258,9 @@ header .slider .circle_icon a {
   margin: 0 auto;
   position: relative;
 }
-.store .slider_wrapper .box #txt h4 {font-size: 0.813rem;}
-.store .slider_wrapper .box #txt h2 {font-size: 1.25rem; font-weight: 500; font-family: 'Pretendard'; padding: 5px 0;}
-.store .slider_wrapper .box #txt {
+.store .slider_wrapper .box .store_txt h4 {font-size: 0.813rem;}
+.store .slider_wrapper .box .store_txt h2 {font-size: 1.25rem; font-weight: 500; font-family: 'Pretendard'; padding: 5px 0;}
+.store .slider_wrapper .box .store_txt {
   position: absolute;
   bottom: 30px; left: 20px;
 }

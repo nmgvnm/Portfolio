@@ -1,4 +1,17 @@
 @charset "utf-8";
-header .slider .txt_box a {
+@media (min-width:1280px) {
   
+header .slider .slider_txt_box a:hover {
+  background-color: #fff;
+  color: var(--main-color);
+  font-weight: 800;
+}
+
+header .top_nav .nav_wrapper #menu {
+  
+}
+
+
+
+
 }

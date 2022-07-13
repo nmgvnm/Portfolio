@@ -35,16 +35,16 @@
     background: url(../images/icon/mobile_top_logo.svg) no-repeat 50% / contain;
   }
   header .slider {height: 771px; position: relative;}
-  header .slider .txt_box { width: 760px; height: 358px; top: 18vh;}
-  header .slider .txt_box h2 {
+  header .slider .slider_txt_box { width: 760px; height: 358px; top: 18vh;}
+  header .slider .slider_txt_box h2 {
     font-size: 3.75rem;
     line-height: 4.5rem;
   }
-  header .slider .txt_box p{
+  header .slider .slider_txt_box p{
     font-size: 1.25rem;
     padding: 20px 0 60px;
   }
-  header .slider .txt_box a {
+  header .slider .slider_txt_box a {
     width: 153px; height: 54px;
     font-size: 1rem;
     line-height: 52px;
@@ -74,13 +74,13 @@
     grid-template-rows: repeat(2, 332px);
   }
 
-  .main_01 .box .txt_box h2 {
+  .main_01 .box .main_01_txt_box h2 {
     font-size: 3.688rem;
   }
-  .main_01 .box .txt_box h3 {
+  .main_01 .box .main_01_txt_box h3 {
     font-size: 2.313rem;
   }
-  .main_01 .box .txt_box p {
+  .main_01 .box .main_01_txt_box p {
     font-size: 1.25rem;
   }
 
@@ -153,9 +153,9 @@
 
 
   /* magazine css */
-  .container_magazine .title #txt {display: block;}
-  .container_magazine .box6 #txt,
-  .container_magazine .box3 #txt {display: none;}
+  .container_magazine .title .magazine_txt {display: block;}
+  .container_magazine .box6 .magazine_txt,
+  .container_magazine .box3 .magazine_txt {display: none;}
 
   .container_magazine {
     grid-template-rows: initial;
@@ -171,7 +171,7 @@
      position: relative;
      
   }
-  .container_magazine .title #txt {
+  .container_magazine .title .magazine_txt {
     position: absolute;
     bottom: 30px; left: 40px;
     font-size: 1.472rem;
@@ -208,6 +208,11 @@
   }
   .container_magazine .box a {
     font-size: 1.25rem;
+  }
+
+  .container_magazine .box .magazine_txt img {
+    width: 50px;
+    margin-top: 3px;
   }
 
   

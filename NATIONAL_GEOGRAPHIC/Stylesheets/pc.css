@@ -6,20 +6,20 @@
     height: 918px;
   }
   header .slider {height: 838px;}
-  header .slider .txt_box { 
+  header .slider .slider_txt_box { 
     width: 1000px; height: 388px; position: relative;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
   }
-  header .slider .txt_box h2 {
+  header .slider .slider_txt_box h2 {
     font-size: 4.075rem;
     line-height: 4.89rem;
   }
-  header .slider .txt_box p{
+  header .slider .slider_txt_box p{
     font-size: 1.5rem;
   }
-  header .slider .txt_box a {
+  header .slider .slider_txt_box a {
     position: absolute;
     bottom: 0; left: 50%;
     transform: translate(-50%);
@@ -35,18 +35,18 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 509px;
 }
-.main_01 .box .txt_box {
+.main_01 .box .main_01_txt_box {
   height: 227px;  width: 270px;
   word-break: keep-all; 
   margin: 0 auto;
 }
-.main_01 .box .txt_box h2 {
+.main_01 .box .main_01_txt_box h2 {
   font-size: 3.688rem;
 }
-.main_01 .box .txt_box h3 {
+.main_01 .box .main_01_txt_box h3 {
   font-size: 2.313rem;
 }
-.main_01 .box .txt_box p {
+.main_01 .box .main_01_txt_box p {
   font-size: 1.269rem;
   line-height: 2.188rem;
 }
@@ -121,7 +121,7 @@
   .container_magazine .title .wrapper {
      width: 44.4vw; height: 845px;
   }
-  .container_magazine .title #txt {
+  .container_magazine .title .magazine_txt {
     font-size: 1.25rem;
     line-height: 2rem;
     
@@ -145,7 +145,7 @@
   }
 
 
-  .container_magazine .box #txt {
+  .container_magazine .box .magazine_txt {
     padding: 50px;
   }
   .container_magazine .box h2 {
@@ -155,6 +155,9 @@
     font-size: 1.25rem;
   }
 
+  .container_magazine .box .magazine_txt img {
+    width: 60px;
+  }
 
 
 
@@ -168,10 +171,10 @@
 .store .slider_wrapper .box {
   width: 31.9271vw; height: 613px;
 }
-.store .slider_wrapper .box #txt {margin: 20px;}
-.store .slider_wrapper .box #txt h4 {font-size: 1.188rem;}
-.store .slider_wrapper .box #txt h2 {font-size: 2.25rem; padding: 15px 0 20px;}
-.store .slider_wrapper .box #txt p {font-size: 1.563rem;}
+.store .slider_wrapper .box .store_txt {margin: 20px;}
+.store .slider_wrapper .box .store_txt h4 {font-size: 1.188rem;}
+.store .slider_wrapper .box .store_txt h2 {font-size: 2.25rem; padding: 15px 0 20px;}
+.store .slider_wrapper .box .store_txt p {font-size: 1.563rem;}
 
 footer .wrapper_footer .sns {
   margin-top: 60px;
