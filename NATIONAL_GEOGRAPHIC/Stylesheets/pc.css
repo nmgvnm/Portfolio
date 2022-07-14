@@ -1,6 +1,6 @@
 @charset "utf-8";
 @media (min-width:1280px) {
-
+  header .slider .slider_txt_box .more_button .wrapper #header_arrow {display: block;}
   /* header css */
   header {
     height: 918px;
@@ -19,13 +19,32 @@
   header .slider .slider_txt_box p{
     font-size: 1.5rem;
   }
-  header .slider .slider_txt_box a {
+  header .slider .slider_txt_box .more_button {
     position: absolute;
     bottom: 0; left: 50%;
     transform: translate(-50%);
-    width: 177px; height: 62px;
-    font-size: 1.125rem;
-    line-height: 60px;
+    width: 200px; height: 60px; 
+    font-size: 1.5rem;
+    overflow: hidden;
+  }
+  header .slider .slider_txt_box .more_button .wrapper {
+    position: relative;
+  }
+  header .slider .slider_txt_box .more_button .wrapper #header_txt {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%);
+    width: max-content;
+   }
+  header .slider .slider_txt_box .more_button .wrapper #header_arrow {
+    background-color: rgb(197, 197, 197);
+    color: var(--main-color);
+    font-weight: 800;
+    position: absolute;
+    right: -55px; top: 2px;
+    height: 52px; width: 50px;
+    text-align: center; line-height: 52px;
+    border-radius: 3px;
   }
 
 
@@ -80,6 +99,12 @@
 }
 .main_02 .container_content .txt_wrapper h2 {
   margin: 45px 0 20px;
+}
+.main_02 .container_content .txt_wrapper a:hover {
+  background-color: var(--gray-color3);
+  color: var(--main-color);
+  font-weight: 500;
+  transition: all 0.3s 0.1s;
 }
 
 

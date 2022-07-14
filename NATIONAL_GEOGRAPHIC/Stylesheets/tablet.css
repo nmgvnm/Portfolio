@@ -44,7 +44,7 @@
     font-size: 1.25rem;
     padding: 20px 0 60px;
   }
-  header .slider .slider_txt_box a {
+  header .slider .slider_txt_box .more_button {
     width: 153px; height: 54px;
     font-size: 1rem;
     line-height: 52px;

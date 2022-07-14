@@ -38,7 +38,19 @@
     border-radius: 3px;
   }
 
-  .test_more_button {color: #000; text-decoration: none; font-size: 1.5rem; font-weight: bold; border: 2px solid #000; border-radius: 3px; display: block; width: 200px; height: 50px; position: relative; margin-top: 20px; overflow: hidden;}
+  .test_more_button {
+    color: #000; text-decoration: none; 
+    background-color: #ffd700;
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    border: 2px solid #000; 
+    border-radius: 3px; 
+    display: block; 
+    width: 200px; height: 50px; 
+    position: relative; 
+    margin-top: 20px; 
+    overflow: hidden;
+  }
   .test_more_button #header_txt {
     position: absolute;
     top: 50%; left: 50%;
@@ -55,11 +67,17 @@
   }
 
   .test_more_button:hover #header_txt {
+    animation: txt ease 0.5s 0.2s forwards;
   }
   .test_more_button:hover #arrow {
-    animation: button ease 0.3s alternate-reverse;
+    animation: button ease 0.5s 0.2s;
+    animation-fill-mode: forwards;
   }
-  
+  @keyframes txt {
+    100% {
+      left: 75px;
+    }    
+  }
   @keyframes button {
     100% {
       right: 2px;
@@ -85,6 +103,8 @@
   <span id="header_txt">view more</span>
   <span id="arrow">→</span>
 </a>
+
+
 
 </body>
 </html>

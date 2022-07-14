@@ -2,6 +2,7 @@
 /* * {
   transition: all .3s;
 } */
+header .slider .slider_txt_box .more_button .wrapper #header_arrow {display: none;}
 header {
   background: url(../images/1.banner_img.png) no-repeat 50%;
   height: 692px ;
@@ -44,15 +45,16 @@ header .slider .slider_txt_box p {
   line-height: 1.603rem;
   font-size: 0.938rem;
 }
-header .slider .slider_txt_box a {
+header .slider .slider_txt_box .more_button {
   color: var(--main-txt-color2);
   font-family: 'geograph';
-  font-weight: 500;
+  font-weight: 400;
   font-size: 0.7rem; line-height: 40px;
   text-align: center;
   display: block;
   width: 106px; height: 40px;
   border: #fff solid 2px;
+  border-radius: 3px
 }
 header .slider .button {display: none;}
 header .slider .circle_icon {

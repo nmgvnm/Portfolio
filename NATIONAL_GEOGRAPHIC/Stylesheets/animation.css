@@ -1,15 +1,36 @@
 @charset "utf-8";
 @media (min-width:1280px) {
-  
-  header .slider .slider_txt_box a:hover span {
-    transition: left 0.3s ease, right 0.3s ease;
+  header .slider .slider_txt_box .more_button:hover {
+    background-color: var(--gray-color3);
+    color: var(--main-color);
+    font-weight: 600;
+    transition: all 0.5s 0.2s;
   }
-header .slider .slider_txt_box a:hover {
-  background-color: #fff;
-  color: var(--main-color);
-  font-weight: 800;
-}
+  header .slider .slider_txt_box .more_button:hover .wrapper #header_txt {
+    animation: txt ease 0.5s 0.2s forwards;
+   }
+  header .slider .slider_txt_box .more_button:hover .wrapper #header_arrow {
+    animation: button ease 0.5s 0.2s;
+    animation-fill-mode: forwards;
+  }
 
+  @keyframes txt {
+    100% {
+      left: 75px;
+    }    
+  }
+  @keyframes button {
+    0%{
+      opacity: 0;
+    }
+    80%{
+      opacity: ;
+    }
+    100% {
+      right: 2px;
+      opacity: 1;
+    }
+  }
 
 
 }
