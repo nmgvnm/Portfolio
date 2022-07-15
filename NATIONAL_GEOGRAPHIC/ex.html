@@ -86,10 +86,50 @@
   }
 
 
+  .drop_menu {transition: all 1s; list-style: none; padding: 0; background-color: #ffd700; width: 35px; position: relative; height: 20px; cursor: pointer;}
+  .drop_menu li {
+    background-color: #000; 
+    color: rgba(0, 0, 0, 0);
+    width: 35px; height: 2px;
+    position: absolute;
+    right: 0;
+    transition: all .5s
+  }
+  .drop_menu li:nth-child(1) {
+    top: 0;
+  }
+  .drop_menu li:nth-child(2) {
+    width: 24px;
+    top: 9px
+    
+  }
+  .drop_menu li:nth-child(3) {
+    width: 30px;
+    bottom: 0;
+  }
+
+  .drop_menu:hover li:nth-child(1){
+   transform: rotate(45deg) translate(0,-50%);
+   top: 50%;
+  }
+  .drop_menu:hover li:nth-child(2){display: none;}
+  .drop_menu:hover li:nth-child(3){
+    width: 35px;
+    transform: rotate(-45deg) translate(0,-50%);
+   top: 50%;
+  }
+ 
  </style>
 </head>
 <body>
-
+  <div class="wrapper">
+    <ul class="drop_menu">
+      <li>-</li>
+      <li>-</li>
+      <li>-</li>
+    </ul>
+    
+  </div>
 <a href="#" class="hover_more_button">
   <span id="header_txt">view more</span>
   <span id="arrow">→</span>

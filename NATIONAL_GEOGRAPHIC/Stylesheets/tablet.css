@@ -2,7 +2,7 @@
 @media (min-width:768px) {
   /* header css */
   header .slider .button {display: block;}
-  header .top_nav .nav_wrapper #drawer_menu {display: none;} 
+  header .top_nav .nav_wrapper #drop_menu_wrapper {display: none;} 
 
   header {
     height: 851px;
@@ -13,7 +13,6 @@
   header .top_nav .nav_wrapper {height: 80px; padding: 0 50px; border-bottom: 1px rgba(225, 225, 225, 0.2) solid;}
   header .top_nav .nav_wrapper #menu {display: block;}
   
-
   header .top_nav .nav_wrapper #menu {
     display: flex;
     text-align: center;
@@ -235,8 +234,16 @@
 
 
 footer {height: 309px; overflow: hidden;}
-footer .wrapper_footer .copyright{margin-top: 50px;}
-footer .wrapper_footer {height: 309px; margin: 30px auto;}
+footer .wrapper_footer {
+  display: grid;  
+  grid-template-columns: repeat(2, 1fr) / repeat(2, 1fr);
+  height: 309px;
+  position: relative;
+}
+footer .wrapper_footer .info {position: absolute; right:0; top: 30px; text-align: right; }
+footer .wrapper_footer .info a {font-size: 2.5rem;}
+footer .wrapper_footer .sns {margin-top: 30px; grid-column: 1; grid-row: 1;}
+footer .wrapper_footer .copyright{grid-column: 1 / 3;}
 footer .wrapper_footer .copyright ul {width: 285px;}
 
 

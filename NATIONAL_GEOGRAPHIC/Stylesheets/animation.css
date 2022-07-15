@@ -1,5 +1,5 @@
 @charset "utf-8";
-* {transition: all 0.3s;}
+/* * {transition: all 0.3s;} */
 @media (min-width:1280px) {
   header .slider .slider_txt_box .more_button:hover {
     background-color: var(--gray-color3);
@@ -28,8 +28,25 @@
       right: 2px;
       opacity: 1;
     }
+    100% {
+      right: 2px;
+      opacity: 1;
+    }
+    0%{
+      opacity: 0;
+    }
   }
-
+  .container_magazine .title:hover .wrapper {
+    outline: solid;
+     outline-color: var(--point-color);
+     outline-width: 60px;
+     transition: all .5s;
+     background-color: rgba(0, 0, 0, .6);
+  }
+  .store .slider_wrapper .box:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .5);
+  }
 
 
   .container_magazine .title:hover .magazine_txt {
@@ -42,6 +59,42 @@
     }
     100%{
       opacity: 1;
+    }
+  }
+  .container_magazine .box:hover {
+    background-color: rgba(0, 0, 0, .6);
+    color: #fff;
+  }
+  .container_magazine .box1:hover,
+  .container_magazine .box8:hover {
+    background-color: var(--main-color);
+  }
+  .container_magazine .box:hover .magazine_txt {
+    animation: magazine_txt3 ease 0.3s forwards;
+   }
+  .container_magazine .box:hover .magazine_txt p a {
+    display: inline-block;
+    
+    animation: magazine_txt2 ease-in-out 0.3s forwards;
+  }
+ 
+  @keyframes magazine_txt2 {
+    0%{
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      color: #fff;
+      margin-top: 20px;
+    }
+  }
+  @keyframes magazine_txt3  {
+    0%{
+      color: #000;
+    }
+    100% {
+      color: #fff;
+      bottom: 30px; 
     }
   }
 }

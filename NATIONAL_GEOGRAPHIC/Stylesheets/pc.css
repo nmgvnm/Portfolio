@@ -144,14 +144,20 @@
     grid-template-rows: initial;
     grid-template: repeat(4, 480px) / repeat(4, 1fr);
   }
+  .container_magazine .title {
+    overflow: hidden;
+    cursor: pointer;
+  }
   .container_magazine .title .wrapper {
      width: 44.4vw; height: 845px;
      
-     border: 30px solid;
+     border: 4.7px solid var(--point-color);
+     
   }
   .container_magazine .title .magazine_txt {
     font-size: 1.25rem;
     line-height: 2rem;
+    padding: 0;
     
   }
   .container_magazine .title .wrapper .logo {
@@ -172,12 +178,18 @@
     grid-row: 4;
   }
 
-
-  .container_magazine .box .magazine_txt {
-    padding: 50px;
+  .container_magazine .box {
+    position: relative;
   }
+  .container_magazine .box .magazine_txt {
+    position: absolute;
+    bottom: 20px; left: 20px;
+    padding: 0;
+  }
+
   .container_magazine .box h2 {
-    padding-bottom: 20px;
+    margin: 0;
+    padding: 0;
   }
   .container_magazine .box a {
     font-size: 1.25rem;
@@ -187,7 +199,8 @@
     width: 60px;
   }
 
-
+  .container_magazine .box .magazine_txt p a {display: none;}
+  
 
 /* store css */
 .store {height: 1118px;}
@@ -204,12 +217,11 @@
 .store .slider_wrapper .box .store_txt h2 {font-size: 2.25rem; padding: 15px 0 20px;}
 .store .slider_wrapper .box .store_txt p {font-size: 1.563rem;}
 
-footer .wrapper_footer .sns {
-  margin-top: 60px;
-}
 footer .wrapper_footer .copyright{ 
-  display: flex; justify-content: space-between; width:69.3531vw;
+  display: flex; justify-content: space-between; width: 100%;
 }
-
+footer .wrapper_footer .info {
+ right: 20px;
+}
   
 }
