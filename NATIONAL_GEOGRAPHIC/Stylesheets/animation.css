@@ -1,16 +1,17 @@
 @charset "utf-8";
+* {transition: all 0.3s;}
 @media (min-width:1280px) {
   header .slider .slider_txt_box .more_button:hover {
     background-color: var(--gray-color3);
     color: var(--main-color);
     font-weight: 600;
-    transition: all 0.5s 0.2s;
+    transition: all;
   }
   header .slider .slider_txt_box .more_button:hover .wrapper #header_txt {
-    animation: txt ease 0.5s 0.2s forwards;
+    animation: txt ease 0.3s 0.1s forwards;
    }
   header .slider .slider_txt_box .more_button:hover .wrapper #header_arrow {
-    animation: button ease 0.5s 0.2s;
+    animation: button ease 0.3s 0.1s;
     animation-fill-mode: forwards;
   }
 
@@ -25,6 +26,21 @@
     }
     100% {
       right: 2px;
+      opacity: 1;
+    }
+  }
+
+
+
+  .container_magazine .title:hover .magazine_txt {
+    animation: magazine_txt ease 0.3s forwards;
+  }
+  @keyframes magazine_txt {
+    0% {
+      bottom: 0;
+      opacity: 0;
+    }
+    100%{
       opacity: 1;
     }
   }

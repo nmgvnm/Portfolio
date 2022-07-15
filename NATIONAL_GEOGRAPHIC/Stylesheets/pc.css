@@ -138,13 +138,16 @@
   }
 
 /* magazine css */
-
+  .container_magazine .title .magazine_txt {display: none;}
+  .container_magazine .title:hover .magazine_txt {display: block;}
   .container_magazine {
     grid-template-rows: initial;
     grid-template: repeat(4, 480px) / repeat(4, 1fr);
   }
   .container_magazine .title .wrapper {
      width: 44.4vw; height: 845px;
+     
+     border: 30px solid;
   }
   .container_magazine .title .magazine_txt {
     font-size: 1.25rem;
