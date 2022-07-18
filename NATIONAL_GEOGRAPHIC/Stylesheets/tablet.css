@@ -143,13 +143,15 @@
   }
   .main_03 .video {
     position: initial;
-    
     width: initial;
     position: absolute;
     left: 0;
     width: 90vw;
     bottom: 0;
   }
+   .main_03 .video video {
+    height: initial;
+   }
 
 
 
