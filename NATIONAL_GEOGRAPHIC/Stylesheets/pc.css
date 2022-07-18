@@ -52,21 +52,7 @@
     z-index: 9999;
     font-weight: 700;
   }
-  /* header .top_nav .nav_wrapper #menu li span a {
-    width: 0;
-  }
-  header .top_nav .nav_wrapper #menu li {
-    transition: all .3s;
-  }
-  header .top_nav .nav_wrapper #menu li:hover {
-    background-color: var(--point-color);
-    cursor: pointer;
-  }
-  header .top_nav .nav_wrapper #menu li:hover a {
-    color: var(--main-color);
-    font-weight: 700;
-
-  } */
+  
 
 
 /* main css */
