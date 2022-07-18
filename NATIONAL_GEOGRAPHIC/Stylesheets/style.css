@@ -208,9 +208,9 @@ header .slider .circle_icon a {
 
 .main_03 .video_box .pc {display: none;}
 .main_03 {height: 740px; display: grid;
-  place-content: center; }
+  place-content: center; overflow: hidden; margin-bottom: 10px;}
 .main_03 .video_box {
-  width: 90vw; height: 800px;
+  width: 90vw; height: 700px;
   position: relative;
   
 }
@@ -228,8 +228,12 @@ header .slider .circle_icon a {
 }
 .main_03 .video {
   position: absolute;
-  width: 150vw;
-  left: -30%;
+  width: 100vw;
+  left: -5%;
+}
+.main_03 .video video {
+  height: 300px;
+  object-fit: cover;
 }
 
 
