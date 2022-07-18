@@ -1,7 +1,10 @@
 @charset "utf-8";
 @media (min-width:1280px) {
-  header .slider .slider_txt_box .more_button .wrapper #header_arrow {display: block;}
+ 
   /* header css */
+
+
+
   header {
     height: 918px;
   }
@@ -27,25 +30,43 @@
     font-size: 1.5rem;
     overflow: hidden;
   }
-  header .slider .slider_txt_box .more_button .wrapper {
-    position: relative;
+  header .top_nav .nav_wrapper #menu li {
+    height: 80px;
+    display: flex;
+    align-items: center;
   }
-  header .slider .slider_txt_box .more_button .wrapper #header_txt {
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%);
-    width: max-content;
-   }
-  header .slider .slider_txt_box .more_button .wrapper #header_arrow {
-    background-color: rgb(197, 197, 197);
+  header .top_nav .nav_wrapper #menu li span {
+    opacity: 1;
+    color: rgba(0, 0, 0, 0);
+    background-color: var(--point-color);
+    left: -4.7px ; top: 0px;
+    width: 0; height: 80px;
+    cursor: pointer;
+  }
+  header .top_nav .nav_wrapper #menu li:hover span {
+    width: calc(100% + 4.7px);
+    z-index: 9;
+  }
+  header .top_nav .nav_wrapper #menu li:hover a {
     color: var(--main-color);
-    font-weight: 800;
-    position: absolute;
-    right: -55px; top: 2px;
-    height: 52px; width: 50px;
-    text-align: center; line-height: 52px;
-    border-radius: 3px;
+    z-index: 9999;
+    font-weight: 700;
   }
+  /* header .top_nav .nav_wrapper #menu li span a {
+    width: 0;
+  }
+  header .top_nav .nav_wrapper #menu li {
+    transition: all .3s;
+  }
+  header .top_nav .nav_wrapper #menu li:hover {
+    background-color: var(--point-color);
+    cursor: pointer;
+  }
+  header .top_nav .nav_wrapper #menu li:hover a {
+    color: var(--main-color);
+    font-weight: 700;
+
+  } */
 
 
 /* main css */
@@ -181,11 +202,7 @@
   .container_magazine .box {
     position: relative;
   }
-  /* .container_magazine .box .magazine_txt {
-    position: absolute;
-    bottom: 20px; left: 20px;
-    padding: 0;
-  } */
+ 
 
   .container_magazine .box h2 {
     margin: 0;

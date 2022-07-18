@@ -400,7 +400,14 @@ footer .wrapper_footer .info a{
   color: #fff;
   font-size: 2rem;
   display: block;
-  width: 200px;
+  width:fit-content;
   font-weight: 900;
-
+  border: 1px solid var(--gray-color3);
+  border-radius: 3px;
+  padding: 15px 20px;
+  transition: all .5s;
+}
+footer .wrapper_footer .info a:hover {
+  background-color: var(--gray-color3);
+  color: var(--main-color);
 }

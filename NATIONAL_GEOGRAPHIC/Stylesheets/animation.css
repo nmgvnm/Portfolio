@@ -9,39 +9,7 @@
     color: var(--main-color);
     font-weight: 600;
   }
-  header .slider .slider_txt_box .more_button .wrapper #header_txt {
-    transition: all .3s;
-  }
-  header .slider .slider_txt_box .more_button:hover .wrapper #header_txt {
-    transform: translate(-90px);
-    /* animation: txt ease 0.3s 0.1s forwards; */
-   }
-  header .slider .slider_txt_box .more_button:hover .wrapper #header_arrow {
-    animation: button ease 0.3s 0.1s;
-    animation-fill-mode: forwards;
-  }
-
-  /* @keyframes txt {
-    100% { 
-      left: 75px;
-    }    
-  } */
-  @keyframes button {
-    0%{
-      opacity: 0;
-    }
-    100% {
-      right: 2px;
-      opacity: 1;
-    }
-    100% {
-      right: 2px;
-      opacity: 1;
-    }
-    0%{
-      opacity: 0;
-    }
-  }
+ 
   .store .slider_wrapper .box:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, .5);
@@ -73,17 +41,8 @@
   .container_magazine .title:hover .magazine_txt {
     opacity: 1;
     bottom: 20px; left: 20px;
-    /* animation: magazine_txt ease 0.3s forwards; */
   }
-  /* @keyframes magazine_txt {
-    0% {
-      bottom: 0;
-      opacity: 0;
-    }
-    100%{
-      opacity: 1;
-    }
-  } */
+
   .container_magazine .box {
     transition: all .2s;
     overflow: hidden;
@@ -103,7 +62,6 @@
   .container_magazine .box:hover .magazine_txt {
     bottom: 0;
 
-    /* animation: magazine_txt3 ease 0.3s forwards; */
    }
    .container_magazine .box .magazine_txt p a {
     transition: all .7s;
@@ -125,13 +83,5 @@
       margin-top: 20px;
     }
   }
-  @keyframes magazine_txt3  {
-    0%{
-      color: #000;
-    }
-    100% {
-      color: #fff;
-      bottom: 30px; 
-    }
-  }
+ 
 }

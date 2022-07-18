@@ -11,22 +11,29 @@
     background-color: var(--opacity-color);
   }
   header .top_nav .nav_wrapper {height: 80px; padding: 0 50px; border-bottom: 1px rgba(225, 225, 225, 0.2) solid;}
-  header .top_nav .nav_wrapper #menu {display: block;}
-  
-  header .top_nav .nav_wrapper #menu {
-    display: flex;
-    text-align: center;
-  }
-  header .top_nav .nav_wrapper #menu li {border-right: var(--point-border); padding: 0 45px;}
-  header .top_nav .nav_wrapper #menu a {
+   header .top_nav .nav_wrapper #menu {display: block;}
+   header .top_nav .nav_wrapper #menu {display: flex; text-align: center;}
+   header .top_nav .nav_wrapper #menu li {
+    position: relative;
+   }
+   header .top_nav .nav_wrapper #menu li a {
     font-family: 'Montserrat';
     font-weight: 500;
     display: block;
     color: #fff;
-  }
-  header .top_nav .nav_wrapper #menu li:first-child {
+    padding: 0 45px;
+    border-right: var(--point-border);
+    position: relative;
+   }
+   header .top_nav .nav_wrapper #menu li:first-child a {
     border-left: var(--point-border);
-  }
+   }
+   header .top_nav .nav_wrapper #menu li span {
+    position: absolute;
+    top: 0; opacity: 0;
+    
+   }
+
 
   header .top_nav .nav_wrapper #logo a{
     display: block;
