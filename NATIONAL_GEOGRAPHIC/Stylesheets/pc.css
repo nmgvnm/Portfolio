@@ -138,7 +138,7 @@
   }
 
 /* magazine css */
-  .container_magazine .title .magazine_txt {display: none;}
+  /* .container_magazine .title .magazine_txt {display: none;} */
   .container_magazine .title:hover .magazine_txt {display: block;}
   .container_magazine {
     grid-template-rows: initial;
@@ -181,15 +181,15 @@
   .container_magazine .box {
     position: relative;
   }
-  .container_magazine .box .magazine_txt {
+  /* .container_magazine .box .magazine_txt {
     position: absolute;
     bottom: 20px; left: 20px;
     padding: 0;
-  }
+  } */
 
   .container_magazine .box h2 {
     margin: 0;
-    padding: 0;
+    padding-bottom: 20px;
   }
   .container_magazine .box a {
     font-size: 1.25rem;
@@ -199,7 +199,7 @@
     width: 60px;
   }
 
-  .container_magazine .box .magazine_txt p a {display: none;}
+  /* .container_magazine .box .magazine_txt p a {display: none;} */
   
 
 /* store css */
