@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+:root {
+  --main-color:#202527;
+  --bg-color:#fcf0ec;
+}
+
+  h1, h2, h3, h4, h5 {font-family: "SilkSerif";}
+  p {font-family: "GmarketSans";}
+
+  img{width: 329px;}
