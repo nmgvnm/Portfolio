@@ -7,5 +7,110 @@
 
   h1, h2, h3, h4, h5 {font-family: "SilkSerif";}
   p {font-family: "GmarketSans";}
+  a {color: var(--main-color); display: block;}
 
   img{width: 329px;}
+
+
+.wrapper {background-color: var(--bg-color); width: 100%; overflow: hidden;}
+
+/* header */
+* {box-sizing: border-box;}
+header .top_nav_wrapper {position: fixed; top: 0;}  
+header .top_nav {
+  width: 100vw; height: 134px;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+header .top_nav .logo{width: 110px; margin-top: 3px;}
+header .top_nav .top_menu{display: flex; text-align: center;}
+header .top_nav .top_menu li {
+  padding: 10px 10px; margin: 0 20px;
+  height: fit-content;
+  cursor: pointer;
+}
+
+/*** menu 마우스 이벤트 추가 ***/
+header .top_nav .top_menu li {position: relative;}
+header .top_nav .top_menu li::after {
+  content: "";
+  background-color: var(--main-color);
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: 0; left: 0; 
+  transition: .3s;
+}
+/* :hover width:100% */
+header .top_nav .top_menu li:hover::after {width: 100%;}
+
+header .top_nav .E-mail{padding: 10px 0;}
+
+header .title_wrapper {
+  margin-top: 134px;
+  height: 938px;
+  position: relative;
+  overflow: hidden;
+}
+header .title_wrapper .title{height: inherit;}
+
+/* 라인생성 1px  after: 왼쪽 before: 오른쪽*/
+header .title_wrapper .title::after {
+  content: "";
+  position: absolute;
+  width: 1px; height: 0px; background-color: #000;
+  top: 42px; left: 6.4063vw;
+  animation: line1 1s 1s 1 forwards;
+  
+}
+header .title_wrapper .title::before {
+  content: "";
+  width: 0px; height: 1px; background-color: #000;
+  position: absolute;
+  top: 327px; right: 0;
+  animation: line2 1s 1s 1 forwards;
+}
+
+/* title 내용 */
+header .title_wrapper .title h2 {
+  font-size: 7.625rem;
+  top: 190px; right: 26.5625vw;
+  position: absolute;
+}
+header .title_wrapper .title h1 {
+  font-size: 9.75rem;
+  top: 330px; right: 4.6875vw;
+  position: absolute;
+}
+header .title_wrapper .title p {
+  font-size: 2rem;
+  top: 280px; right: 1.5625vw;
+  position: absolute;
+}
+/* header 애니메이션 */
+header .title .header_ani {
+  position: absolute;
+  bottom: 0; left: 4.8438vw;
+  animation: ani1 infinite linear 15s;
+}
+
+@keyframes ani1 {
+  100%{
+    transform: rotate(360deg);
+  }
+}
+@keyframes line1 {
+  100%{
+    height: 580px;
+  }
+}
+@keyframes line2 {
+  100% {
+    width: 785px;
+  }
+}
+
