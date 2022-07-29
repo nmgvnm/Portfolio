@@ -16,7 +16,7 @@
 
 /* header */
 * {box-sizing: border-box;}
-header .top_nav_wrapper {position: fixed; top: 0;}  
+header .top_nav_wrapper {position: fixed; top: 0; z-index: 9999;}  
 header .top_nav {
   width: 100vw; height: 134px;
   padding: 15px 40px;
@@ -52,7 +52,7 @@ header .top_nav .E-mail{padding: 10px 0;}
 
 header .title_wrapper {
   margin-top: 134px;
-  height: 938px;
+  height: 1127px;
   position: relative;
   overflow: hidden;
 }
@@ -64,7 +64,7 @@ header .title_wrapper .title::after {
   position: absolute;
   width: 1px; height: 0px; background-color: #000;
   top: 42px; left: 6.4063vw;
-  animation: line1 1s 1s 1 forwards;
+  animation: line1 1s .7s 1 forwards;
   
 }
 header .title_wrapper .title::before {
@@ -72,7 +72,7 @@ header .title_wrapper .title::before {
   width: 0px; height: 1px; background-color: #000;
   position: absolute;
   top: 327px; right: 0;
-  animation: line2 1s 1s 1 forwards;
+  animation: line2 1s .7s 1 forwards;
 }
 
 /* title 내용 */
@@ -94,23 +94,80 @@ header .title_wrapper .title p {
 /* header 애니메이션 */
 header .title .header_ani {
   position: absolute;
-  bottom: 0; left: 4.8438vw;
+  bottom: 180px; left: 4.8438vw;
   animation: ani1 infinite linear 15s;
 }
 
-@keyframes ani1 {
-  100%{
-    transform: rotate(360deg);
-  }
+
+/*********** project ***********/
+
+/* project 넓이 / 높이 값 */
+main .project{width: 100%; height: 1901px; position: relative;}
+/* 제목(project) */
+main .project > h3{
+  font-size: 6.375rem;
+  text-align: center;
+  position: absolute;
+  top: 154px; left: 50%;
+  transform: translate(-50%);
 }
-@keyframes line1 {
-  100%{
-    height: 580px;
-  }
+main .project .project_list{
+  position: absolute;
+  top: 423px; left: 50%;
+  transform: translate(-50%);
 }
-@keyframes line2 {
-  100% {
-    width: 785px;
-  }
+main .project .project_list .content{
+  border-bottom: 1px solid #000;
+  position: relative;
 }
 
+/* 마우스이벤트 추가 */
+main .project .project_list .content a {width: 1697px; height: 244px; transition: 1s;}
+main .project .project_list .content a::after {
+  content: "";
+  width: 0px; height: 1.7px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: 0px; left: 0;
+  transition: .8s;
+}
+main .project .project_list .content:hover a::after {
+  width: 1697px;
+}
+
+
+main .project .project_list .content span{
+  font-size: 1.25rem;
+  position: absolute;
+  top: 91px; left: 10px;
+  font-family: "GmarketSans";
+}
+main .project .project_list .content h2{
+  font-size: 5.813rem;
+  position: absolute;
+  top: 61px; left: 100px;
+}
+main .project .project_list .content h4{
+  font-size: 1.875rem;
+  font-family: "GmarketSans";
+  font-weight: 300;
+  position: absolute;
+  bottom: 30px; left: 100px;
+  color: #000;
+
+
+}
+main .project .project_list .content p{
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: right;
+  line-height: 1.688rem;
+  position: absolute;
+  bottom: 30px; right: 130px;
+  color: #000;
+}
+main .project .project_list .content img{ 
+  width: 23px;
+  position: absolute;
+  bottom: 30px; right: 40px;
+}
