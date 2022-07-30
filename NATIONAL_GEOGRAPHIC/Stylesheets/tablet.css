@@ -1,5 +1,5 @@
 @charset "utf-8";
-@media (min-width:768px) {
+@media (min-width:980px) {
   /* header css */
   header .slider .button {display: block;}
   header .top_nav .nav_wrapper #drop_menu_wrapper {display: none;} 
