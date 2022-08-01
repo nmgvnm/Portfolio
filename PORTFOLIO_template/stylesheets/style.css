@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 :root {
   --main-color:#202527;
   --bg-color:#fcf0ec;
@@ -8,8 +7,6 @@
   h1, h2, h3, h4, h5 {font-family: "SilkSerif";}
   p {font-family: "GmarketSans";}
   a {color: var(--main-color); display: block;}
-
-
 
 .wrapper {background-color: var(--bg-color); width: 100%; overflow: hidden;}
 
@@ -25,7 +22,8 @@ header .top_nav {
   font-weight: 500;
   font-size: 1.125rem;
 }
-header .top_nav .logo{width: 110px; margin-top: 3px;}
+header .top_nav .logo{width: 110px; margin-top: 3px; transition: .5s;}
+header .top_nav .logo.down{width: 80px; margin-top: 3px;}
 header .top_nav .top_menu{display: flex; text-align: center;}
 header .top_nav .top_menu li {
   padding: 10px 10px; margin: 0 20px;
@@ -375,9 +373,11 @@ footer p {font-size: 1.25rem; line-height: 85.7141px; font-weight: 300;}
   right: 50px; bottom: 50px;
   transition: .3s;
   opacity: 0;
+  cursor: pointer;
 }
 .top_btn:hover {
   background-color: #5d686d;
   font-weight: 600;
   transform: scale(1.1);
 }
+
