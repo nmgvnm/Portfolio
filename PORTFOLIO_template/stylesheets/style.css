@@ -182,7 +182,7 @@ main .project .project_list .content p{
 main .project .project_list .content img{ 
   width: 1.1979vw;
   position: absolute;
-  bottom: 30px; right: 40px;
+  bottom: 30px; right: 2.0833vw;
 }
 
 /*********** about ***********/
@@ -270,20 +270,20 @@ main .about .about_info .ani2_wrapper .ani2 .about_ani2{
 main .about .about_info > p {
   font-size: 2.232rem;
   font-weight: 300;
-  left: 131px; top: 297px;
+  left: 6.8229vw; top: 297px;
 
 }
 main .about .about_info h2 {
   font-size: 5.449rem;
   font-family: "GmarketSans";
-  left: 120px; top: 350px;
+  left: 6.25vw; top: 350px;
 }
 main .about .about_info .about_me {
   font-size: 2.188rem;
   line-height: 3.625rem;
   font-weight: 300;
   text-align: right;
-  right: 130px; top: 584px;
+  right: 6.8229vw; top: 584px;
 
 }
 
@@ -302,14 +302,14 @@ main .about .about_skill .skill_list {
 }
 main .about .about_skill .skill_list .content {
   margin: 0 auto;
-  width: 1531px; height: 200px;
+  width: 79.7396vw; height: 200px;
   border-bottom: 1px solid #000;
   position: relative;
 }
 main .about .about_skill .skill_list .content h5 {
   font-family: "Montserrat";
   position: absolute;
-  left: 187.4px; top: 50%;
+  left: 9.7604vw; top: 50%;
   transform: translate(0,-50%);
   font-size: 2.75rem;
 }
@@ -319,7 +319,7 @@ main .about .about_skill .skill_list .content .possible {
   font-size: 1.375rem;
   line-height: 2.438rem;
   position: absolute;
-  left: 907.411px; top: 50%;
+  left: 47.2610vw; top: 50%;
   transform: translate(0,-50%);
 }
 
@@ -358,3 +358,26 @@ article .contact h2 {
 footer {width: 100%; height: 85.7141px; padding: 0 50px;}
 footer p {font-size: 1.25rem; line-height: 85.7141px; font-weight: 300;}
 
+
+/* TOP 버튼 */
+.top_btn {
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  background-color: #202527;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 50px; bottom: 50px;
+  transition: .3s;
+  opacity: 0;
+}
+.top_btn:hover {
+  background-color: #5d686d;
+  font-weight: 600;
+  transform: scale(1.1);
+}
