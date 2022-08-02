@@ -44,7 +44,7 @@ header .top_nav .nav_wrapper #drop_menu_wrapper #mobile_menu a:hover {
   background-color: #fff;
   color: #000;
 }
-header .top_nav .nav_wrapper #drop_menu_wrapper:hover  #mobile_menu{
+header .top_nav .nav_wrapper #drop_menu_wrapper.open #mobile_menu{
  display: block;
 }
 
@@ -75,12 +75,12 @@ header .top_nav .nav_wrapper #drop_menu_wrapper {
     bottom: 0;
   }
 
-  .drop_menu:hover li:nth-child(1){
+  .drop_menu.closeMenu li:nth-child(1){
    transform: rotate(45deg) translate(0,-50%);
    top: 50%;
   }
-  .drop_menu:hover li:nth-child(2){display: none;}
-  .drop_menu:hover li:nth-child(3){
+  .drop_menu.closeMenu li:nth-child(2){display: none;}
+  .drop_menu.closeMenu li:nth-child(3){
     width: 35px;
     transform: rotate(-45deg) translate(0,-50%);
    top: 50%;
