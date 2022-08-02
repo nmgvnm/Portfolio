@@ -20,7 +20,7 @@ header .top_nav .nav_wrapper {
   align-items: center;
   justify-content: space-between;
 }
-header .top_nav .nav_wrapper #drop_menu_wrapper #menu {
+header .top_nav .nav_wrapper #drop_menu_wrapper #mobile_menu {
   width: 200px; 
   background-color: var(--main-color);
   position: absolute;
@@ -31,7 +31,7 @@ header .top_nav .nav_wrapper #drop_menu_wrapper #menu {
   display: none;
 }
 
-header .top_nav .nav_wrapper #drop_menu_wrapper #menu a {
+header .top_nav .nav_wrapper #drop_menu_wrapper #mobile_menu a {
   font-family: 'Montserrat';
   font-size: 1.2rem;
   font-weight: 500;
@@ -40,11 +40,11 @@ header .top_nav .nav_wrapper #drop_menu_wrapper #menu a {
   color: #fff;
   padding:0 30px;
 }
-header .top_nav .nav_wrapper #drop_menu_wrapper #menu a:hover {
+header .top_nav .nav_wrapper #drop_menu_wrapper #mobile_menu a:hover {
   background-color: #fff;
   color: #000;
 }
-header .top_nav .nav_wrapper #drop_menu_wrapper:hover  #menu{
+header .top_nav .nav_wrapper #drop_menu_wrapper:hover  #mobile_menu{
  display: block;
 }
 
