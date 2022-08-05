@@ -14,7 +14,7 @@ nav #gnb {
   justify-content: space-between;
   padding: 0 83px;
   position: fixed;
-  top: 0; left: 0;
+  top: 0; left: 0; 
   box-sizing: border-box;
 }
 /* 로고 가운데 정렬 */
