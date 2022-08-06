@@ -6,20 +6,24 @@
 .wrapper {background-color: var(--bg-color); width: 100%; overflow: hidden;}
 a {color: #000; display: block;}
 h2 {font-family:'SilkSerif';}
-nav {height: 123px; width: 100%;}
 /* nav바 상단고정 */
-nav #gnb {
-  height: 123px; width: 100vw;
-  display: flex;
-  justify-content: space-between;
+nav {
+  height: 123px; width: 100%; 
   padding: 0 83px;
   position: fixed;
   top: 0; left: 0; 
   box-sizing: border-box;
+  z-index: 9999;
+}
+
+/* nav바 상단고정 */
+nav #gnb {
+  height: 123px;
+  display: flex;
+  justify-content: space-between;
 }
 /* 로고 가운데 정렬 */
-nav #gnb img {width: 79.147px; position: absolute; top: 50%; transform: translate(0, -50%);}
-
+nav #gnb img {width: 78px; position: absolute; top: 50%; transform: translate(0, -50%);}
 /* menu 폰트설정 */
 nav #gnb li:last-child > * {
   font-family: 'Montserrat';
@@ -30,16 +34,29 @@ nav #gnb li:last-child h5 {
   font-size: 25px;
   font-weight: 500;
   color: var(--main-color);
+  padding-right: 4px;
 }
-nav #gnb li:last-child .menu {display: none;}
-nav #gnb li:last-child .menu li {
+nav #gnb li:last-child h5.close a {
+  color: rgba(0, 0, 0, 0); 
+  position: relative;
+}
+nav #gnb li:last-child h5.close a::after {
+  content: "CLOSE";
+  position: absolute;
+  color: #000;
+  top: 0; left: 0;
+
+}
+nav #gnb li:last-child .menu {display: none; z-index: 9999;}
+nav #gnb li:last-child #menu_box li {
   padding: 6px 0 4px;
+  margin: 5px 0;
 }
-nav #gnb li:last-child .menu a {
+nav #gnb li:last-child #menu_box a {
   font-size: 1.3rem;
   position: relative;
 }
-nav #gnb li:last-child .menu a::after {
+nav #gnb li:last-child #menu_box a::after {
   content: '';
   position: absolute;
   width: 0;
@@ -48,7 +65,7 @@ nav #gnb li:last-child .menu a::after {
   bottom: 0; left: 0;
   transition: .3s;
 }
-nav #gnb li:last-child .menu li:hover a::after {
+nav #gnb li:last-child #menu_box li:hover a::after {
   width: 100%;
 }
 
@@ -56,7 +73,7 @@ nav #gnb li:last-child .menu li:hover a::after {
 .header_img { width: 100%; height: 900px; position: relative;}
 .header_img img {
   position: absolute;
-  top: 55px; left: 411px;
+  top: 178px; left: 21.41vw;
 }
 .title * {position: absolute;}
 .title {
@@ -66,19 +83,19 @@ nav #gnb li:last-child .menu li:hover a::after {
 .title::after {
   content: '';
   position: absolute;
-  width: 1800px;
+  width: 93.75vw;
   height: 1px;
   background-color: #000;
   bottom: 0; left: 50%;
   transform: translate(-50%);
 }
 .title h2 { 
-  font-size: 80px;
-  top: 0; left: 287px;
+  font-size: 5rem;
+  top: 0; left: 14.95vw;
 }
 .title h3 {
   font-family: 'GmarketSans'; font-weight: 300;
-  font-size: 28px;
+  font-size: 1.75rem;
   bottom: 60px; left: 287px;
 }
 .title p {
@@ -86,6 +103,50 @@ nav #gnb li:last-child .menu li:hover a::after {
   font-size: 1.2rem;
   text-align: right;
   line-height: 1.4;
-  right: 184px;
-  bottom: 124px;
+  right: 9.58vw;
+  bottom: 60px;
 }
+
+
+/* main */
+main .box {
+  position: relative; 
+  width: 1063px; height: 1500px; 
+  margin: 0 auto;}
+main h2 {position: absolute; top: 100px; left: 0; font-size: 50px;}
+/* main 01 _ design */
+.main01 {width: 100%; height: 1772px;}
+.main01 .design {
+  height: 1772px;
+}
+.main01 .design .design_txt {
+  position: absolute;
+  top: 200px; left: 50px;
+}
+.main01 .design .design_txt h3 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 28px;
+}
+.main01 .design .design_txt p {
+  font-family: 'GmarketSans'; font-weight: 300;
+}
+.main01 .design .design_txt #concept p {
+  font-size: 20px; line-height: 2.125rem;
+  padding: 30px 30px;
+}
+.main01 .design .design_txt #keyword {}
+.main01 .design .design_txt #keyword .keyBox {}
+.main01 .design .design_txt #colorPalette {}
+.main01 .design .design_txt #colorPalette .colorBox { 
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.main01 .design .design_txt #colorPalette .colorBox li {margin: 30px 30px;}
+.main01 .design .design_txt #colorPalette .colorBox .color {width: 100px; height: 100px; border-radius: 50%; color: rgba(0, 0, 0, 0); margin-bottom: 10px;}
+.main01 .design .design_txt #colorPalette .colorBox .color1 {background-color: #1e1e1e;}
+.main01 .design .design_txt #colorPalette .colorBox .color2 {background-color: #ffd700;}
+.main01 .design .design_txt #colorPalette .colorBox .color3 {background-color: #ececed; border: 1px solid var(--main-color);}
+.main01 .design .design_txt #colorPalette .colorBox .color4 {background-color: #606060;}
+.main01 .design .design_txt #typography {}

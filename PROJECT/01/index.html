@@ -11,20 +11,24 @@
 <link rel="stylesheet" href="../../stylesheets/font.css">
 <!-- 내가 작성한 css -->
 <link rel="stylesheet" href="./Stylesheets/style.css">
+
 <!-- jQuery -->
-<link rel="stylesheet" href="../../../common/jquery-3.6.0.min.js">
+<script src="../../common/jquery-3.6.0.min.js"></script>
+<!-- 내가 작성한 js -->
+<script src="./script/script.js" defer></script>
 </head>
 <body>
   <div class="wrapper">
-    <!-- header -->
-    <header>
+     <!-- header -->
+     <header>
       <!-- 상단 메뉴 -->
       <nav>
         <ul id="gnb">
-          <li><a href="https://nmgvnm.github.io/Portfolio/PORTFOLIO_template/"><img src="./images/SVG/logo.svg" alt="logo"></a></li>
+          <li><a href="https://nmgvnm.github.io/Portfolio/"><img src="./images/SVG/logo.svg" alt="logo"></a></li>
           <li>
-            <ul class="menu">
-              <li><a href="#">Home</a></li>
+            <h5 id="menuBtn"><a href="#">MENU</a></h5>
+            <ul class="menu" id="menu_box">
+              <li><a href="https://nmgvnm.github.io/Portfolio/">Home</a></li>
               <li><a href="#">Project</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
@@ -46,7 +50,7 @@
     </div>
     <main>
       <div class="main01">
-        <div id="design">
+        <div class="design box">
           <h2>01. Design</h2>
           <ul class="design_txt">
             <li id="concept">
@@ -68,19 +72,19 @@
               <!-- 색상 -->
               <ul class="colorBox">
                 <li>
-                  <div class="color1">color1</div>
+                  <div class="color1 color">color1</div>
                   <p>#1e1e1e</p>
                 </li>
                 <li>
-                  <div class="color2">color2</div>
+                  <div class="color2 color">color2</div>
                   <p>#ffd700</p>
                 </li>
                 <li>
-                  <div class="color3">color3</div>
+                  <div class="color3 color">color3</div>
                   <p>#ececed</p>
                 </li>
                 <li>
-                  <div class="color4">color4</div>
+                  <div class="color4 color">color4</div>
                   <p>#606060</p>
                 </li>
               </ul>
@@ -143,7 +147,7 @@
         </div>
       </div>
       <div class="main02">
-        <div id="pubilsing">
+        <div class="pubilsing box">
           <h2>02. Pubilsing</h2>
           <div id="responsive">
             <h3>Responsive</h3>
@@ -180,7 +184,7 @@
         </div>
       </div>
       <div class="main03">
-        <div id="problems_solution">
+        <div class="problems_solution box">
           <h2>03. Problems & Solution</h2>
           <ul class="txt">
             <li>
@@ -203,7 +207,7 @@
         </div>
       </div>
       <div class="main04">
-        <div id="review">
+        <div class="review box">
           <h2>04. Review</h2>
           <p>디자인부터 퍼블리싱까지 처음으로 제작한 첫 프로젝트입니다.<br>
             반응형으로 웹을 처음으로 제작하려다 보니 다양한 부분에서 신경 써야 할 것들이 많았습니다.<br>

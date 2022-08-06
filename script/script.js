@@ -54,12 +54,13 @@ ctBtn.addEventListener('click', e => {
 
 
 // 스크롤시 로고 사이즈 작게 110px -> 70px
-const logo = document.querySelector('.logo');
+const logo = document.querySelector('.logo_img');
 
 addEventListener('scroll', () => {
-  if (scrollY > project.offsetTop) {
+  if (window.scrollY > 50) {
     logo.classList.add('down');
-  } else if(scrollY <= project.offsetTop) {
+    console.log(scroll);
+  } else if(window.scrollY) {
     logo.classList.remove('down');
   }
 });
