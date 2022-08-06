@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalble=no">
 <title>NATIONAL GEOGRAPHIC</title>
 <!-- reset.css -->
-<link rel="stylesheet" href="../../../common/reset.css">
+<link rel="stylesheet" href="../../common/reset.css">
 <!-- font.css -->
 <link rel="stylesheet" href="../../stylesheets/font.css">
 <!-- 내가 작성한 css -->
@@ -26,7 +26,10 @@
         <ul id="gnb">
           <li><a href="https://nmgvnm.github.io/Portfolio/"><img src="./images/SVG/logo.svg" alt="logo"></a></li>
           <li>
-            <h5 id="menuBtn"><a href="#">MENU</a></h5>
+            <div class="btn_wrapper">
+              <h5 id="menuBtn" class="open"><a href="#">MENU</a></h5>
+              <!-- <h5 id="menuBtn2" class="close"><a href="#"> CLOSE</a></h5> -->
+            </div>
             <ul class="menu" id="menu_box">
               <li><a href="https://nmgvnm.github.io/Portfolio/">Home</a></li>
               <li><a href="#">Project</a></li>
@@ -92,57 +95,60 @@
             <li id="typography">
               <h3>Typography</h3>
               <!-- 한글폰트 -->
-              <div id="kor">
-                <h4>KOR</h4>
-                <section id="pretendard">
-                  <h5>Pretendard</h5>
-                    <ul id="font_pt">
-                      <li>
-                        <h6>가</h6>
-                        <p>Light</p>
-                      </li>
-                      <li>
-                        <h6>가</h6>
-                        <p>Regular</p>
-                      </li>
-                      <li>
-                        <h6>가</h6>
-                        <p>Medium</p>
-                      </li>
-                    </ul>
-                </section>
-              </div>
-              <!-- 영문폰트 -->
-              <div id="eng">
-                <h4>ENG</h4>
-                <section id="geograph">
-                  <h5>Geograph</h5>
-                    <ul id="font_geo">
-                      <li>
-                        <h6>Aa</h6>
-                        <p>Regular</p>
-                      </li>
-                    </ul>
-                </section>
-                <section id="montserrat">
-                  <h5>Montserrat</h5>
-                    <ul id="font_mon">
-                      <li>
-                        <h6>Aa</h6>
-                        <p>Light</p>
-                      </li>
-                      <li>
-                        <h6>Aa</h6>
-                        <p>Regular</p>
-                      </li>
-                      <li>
-                        <h6>Aa</h6>
-                        <p>ExtraBold</p>
-                      </li>
-                    </ul>
-                </section>
+              <div class="font_wrapper">
+                <div id="kor">
+                  <h4>KOR</h4>
+                  <section id="pretendard">
+                    <h5>Pretendard</h5>
+                      <ul class="font">
+                        <li>
+                          <h6>가</h6>
+                          <p>Light</p>
+                        </li>
+                        <li>
+                          <h6>가</h6>
+                          <p>Regular</p>
+                        </li>
+                        <li>
+                          <h6>가</h6>
+                          <p>Medium</p>
+                        </li>
+                      </ul>
+                  </section>
+                </div>
+                <!-- 영문폰트 -->
+                <div id="eng">
+                  <h4>ENG</h4>
+                  <section id="geograph">
+                    <h5>Geograph</h5>
+                      <ul class="font">
+                        <li>
+                          <h6>Aa</h6>
+                          <p>Regular</p>
+                        </li>
+                      </ul>
+                  </section>
+                  <section id="montserrat">
+                    <h5>Montserrat</h5>
+                      <ul class="font">
+                        <li>
+                          <h6>Aa</h6>
+                          <p>Light</p>
+                        </li>
+                        <li>
+                          <h6>Aa</h6>
+                          <p>Regular</p>
+                        </li>
+                        <li>
+                          <h6>Aa</h6>
+                          <p>ExtraBold</p>
+                        </li>
+                      </ul>
+                  </section>
+                </div>
               </div>
             </li>
+            
           </ul>
         </div>
       </div>

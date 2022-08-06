@@ -35,25 +35,59 @@ nav #gnb li:last-child h5 {
   font-weight: 500;
   color: var(--main-color);
   padding-right: 4px;
+  position: relative;
+  transition: .5s;
+}
+/* nav #gnb li:last-child h5::before {
+  content: "";
+  position: absolute;
+  width: 0; height: 10px;
+  bottom: 0; left: 0;
+  transition: .5s;
+  background-color: rgba(70, 130, 180,.7);
+} */
+nav #gnb li:last-child h5:hover::before {
+  width: 100%;
+}
+nav #gnb li:last-child h5 a {
+  color: #000;
 }
 nav #gnb li:last-child h5.close a {
   color: rgba(0, 0, 0, 0); 
   position: relative;
 }
+.btn_wrapper{
+  position: relative;
+}
+nav #gnb li:last-child .btn_wrapper #menuBtn2 {
+  color: #000;
+  position: absolute;
+  top: 0;
+}
+
+
+/* 토글메뉴 버튼 이름 바꾸기 menu => close */
 nav #gnb li:last-child h5.close a::after {
   content: "CLOSE";
   position: absolute;
   color: #000;
   top: 0; left: 0;
-
 }
-nav #gnb li:last-child .menu {display: none; z-index: 9999;}
+nav #gnb li:last-child h5.close a::before {
+  content: "";
+  position: absolute;
+  width: 110%; height: 10px;
+  bottom: 0;
+  background-color: rgba(70, 130, 180,.7);
+} 
+nav #gnb li:last-child .menu {display: none; z-index: 9999; overflow: hidden;}
 nav #gnb li:last-child #menu_box li {
   padding: 6px 0 4px;
   margin: 5px 0;
 }
 nav #gnb li:last-child #menu_box a {
   font-size: 1.3rem;
+  padding-bottom: 3px;
   position: relative;
 }
 nav #gnb li:last-child #menu_box a::after {
@@ -110,34 +144,58 @@ nav #gnb li:last-child #menu_box li:hover a::after {
 
 /* main */
 main .box {
+  width: 1063px; height: 1500px;
+  margin: 0 auto;
   position: relative; 
-  width: 1063px; height: 1500px; 
-  margin: 0 auto;}
+}
+/* 각 박스 하단의 border값 삽입 */
+main .box::after {
+  content: '';
+  position: absolute;
+  width: 93.75vw;
+  height: 1px;
+  background-color: #000;
+  bottom: 0; left: 50%;
+  transform: translate(-50%);
+}
 main h2 {position: absolute; top: 100px; left: 0; font-size: 50px;}
+
 /* main 01 _ design */
-.main01 {width: 100%; height: 1772px;}
-.main01 .design {
-  height: 1772px;
+.main01 {width: 100%; height: 1700px;}
+main .main01 .design {
+  height: inherit;
+  position: relative; 
 }
 .main01 .design .design_txt {
   position: absolute;
-  top: 200px; left: 50px;
+  top: 100px; left: 50px;
+  overflow: hidden;
 }
 .main01 .design .design_txt h3 {
   font-family: 'Montserrat';
-  font-weight: 700;
+  font-weight: 500;
   font-size: 28px;
+  margin-top: 100px;
 }
 .main01 .design .design_txt p {
   font-family: 'GmarketSans'; font-weight: 300;
+  color: #000;
 }
 .main01 .design .design_txt #concept p {
   font-size: 20px; line-height: 2.125rem;
   padding: 30px 30px;
 }
-.main01 .design .design_txt #keyword {}
-.main01 .design .design_txt #keyword .keyBox {}
-.main01 .design .design_txt #colorPalette {}
+.main01 .design .design_txt #keyword .keyBox {
+  display: flex; 
+  font-family: 'GmarketSans'; font-weight: 300; 
+  font-size: 30px; justify-content: center;
+}
+.main01 .design .design_txt #keyword .keyBox li {
+  width: 148px; height: 148px; border-radius: 50%;
+  border: 1px solid var(--main-color);
+  text-align: center; line-height: 148px;
+  margin: 30px 30px;
+}
 .main01 .design .design_txt #colorPalette .colorBox { 
   display: flex;
   justify-content: center;
@@ -149,4 +207,48 @@ main h2 {position: absolute; top: 100px; left: 0; font-size: 50px;}
 .main01 .design .design_txt #colorPalette .colorBox .color2 {background-color: #ffd700;}
 .main01 .design .design_txt #colorPalette .colorBox .color3 {background-color: #ececed; border: 1px solid var(--main-color);}
 .main01 .design .design_txt #colorPalette .colorBox .color4 {background-color: #606060;}
-.main01 .design .design_txt #typography {}
+
+/* #typography grid kor&eng 나누기 */
+.main01 .design .design_txt #typography .font_wrapper {
+  margin: 30px 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* typography 공통적용 부분 font-size */
+#typography h4{ /* kor,eng */
+  font-size: 25px; border-bottom: 1px solid #000; 
+  width: fit-content; 
+  padding-bottom: 4px; margin-bottom: 30px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+
+#typography h5{font-size: 30px;} /* 서체명 */
+#typography h6{font-size: 55px;} /* 가, Aa */
+#typography p{font-size: 20px;} /* weight */
+
+.main01 .design .design_txt #typography .font { /* weight 나누기 */
+  display: flex;
+  text-align: center;
+}
+.main01 .design .design_txt #typography .font li{ /* weight 가로값 */
+  margin-top: 20px; width: 120px;
+}
+.main01 .design .design_txt #typography .font li:nth-child(1) * {font-weight: 300;}
+.main01 .design .design_txt #typography .font li:nth-child(2) * {font-weight: 500;}
+.main01 .design .design_txt #typography.font li:nth-child(3) *{font-weight: 700;}
+
+/* #pretendard 폰트 설정 weight값 */
+.main01 .design .design_txt #typography #kor #pretendard{font-family: 'Pretendard';}
+
+/* #geograph 폰트 설정 weight 값 */
+.main01 .design .design_txt #typography #eng #geograph * {font-family: 'geograph';}
+.main01 .design .design_txt #typography #eng #geograph .font li:nth-child(1) * {font-weight: 500;}
+
+
+/* #montserrat 폰트 설정 weight값 */
+.main01 .design .design_txt #typography #eng #montserrat * {font-family: 'Montserrat';}
+.main01 .design .design_txt #typography #eng #montserrat .font li:nth-child(3) * {font-weight: 800;}
+.main01 .design .design_txt #typography #eng #montserrat h5{margin-top: 20px;}

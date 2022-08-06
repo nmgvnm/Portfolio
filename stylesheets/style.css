@@ -21,6 +21,7 @@ header .top_nav {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 1.125rem;
+  
 }
 header .top_nav .logo{width: 110px; margin-top: 3px; transition: .5s;}
 header .top_nav .logo .logo_img {width: 110px; transition: .5s;}

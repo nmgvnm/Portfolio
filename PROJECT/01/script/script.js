@@ -1,11 +1,19 @@
-// $('#menuBtn').on('click', () => {
-//   $('#menu_box').toggleClass();
+
+$('#menuBtn').on('click', (e) => {
+  $('#menu_box').slideToggle();
+});
+
+// $('#menuBtn').on('click', (e) => {
+//   $('#menuBtn').toggleClass('close');
 // });
 
-$('#menuBtn').on('click', () => {
-  $('#menu_box').toggleClass();
-});
+const menuBtn = document.querySelector('#menuBtn');
+const menuBox = document.querySelector('#menu_box');
 
-$('#menuBtn').on('click', () => {
-  $('#menuBtn').toggleClass('close');
-});
+menuBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  // 토글 버튼
+  menuBtn.classList.toggle('close');
+  // 토글 메뉴
+  // menuBox.classList.toggle('menu');
+})
