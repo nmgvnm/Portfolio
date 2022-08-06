@@ -187,7 +187,7 @@ main .project .project_list .content img{
 
 main .about {width: 100%; height: 2707px; position: relative; }
 
-main .about > h3 { top: 280px; padding: 0 60px;}
+main .about > h3 { top: 154px; padding: 0 60px;}
 
 /* 제목 라인추가 after:왼쪽 before:오른쪽 */
 main .about > h3::after {

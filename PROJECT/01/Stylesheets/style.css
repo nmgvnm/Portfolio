@@ -5,11 +5,11 @@
 }
 .wrapper {background-color: var(--bg-color); width: 100%; overflow: hidden;}
 a {color: #000; display: block;}
+h2 {font-family:'SilkSerif';}
 nav {height: 123px; width: 100%;}
 /* nav바 상단고정 */
 nav #gnb {
   height: 123px; width: 100vw;
-  background-color: aqua;
   display: flex;
   justify-content: space-between;
   padding: 0 83px;
@@ -30,19 +30,37 @@ nav #gnb li:last-child h5 {
   font-weight: 500;
   color: var(--main-color);
 }
+nav #gnb li:last-child .menu {display: none;}
 nav #gnb li:last-child .menu li {
-  padding: 6px 4px;
+  padding: 6px 0 4px;
 }
 nav #gnb li:last-child .menu a {
   font-size: 1.3rem;
-  background-color: burlywood;
   position: relative;
 }
 nav #gnb li:last-child .menu a::after {
   content: '';
   position: absolute;
-  width: 100%;
+  width: 0;
   height: 1px;
   background-color: #000;
   bottom: 0; left: 0;
+  transition: .3s;
 }
+nav #gnb li:last-child .menu li:hover a::after {
+  width: 100%;
+}
+
+/* 메인 디바이스 이미지 */
+.header_img { width: 100%; height: 900px; position: relative;}
+.header_img img {
+  position: absolute;
+  top: 55px; left: 411px;
+}
+
+.title {
+  width: 100%; height: 243px;
+}
+.title h2 { font-size: 82px;}
+.title h3 {font-family: 'GmarketSans'; font-weight: 300;}
+.title p {}
