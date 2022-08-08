@@ -6,6 +6,8 @@
 .wrapper {background-color: var(--bg-color); width: 100%; overflow: hidden;}
 a {color: #000; display: block;}
 h2 {font-family:'SilkSerif';}
+
+/****** header ******/
 /* nav바 상단고정 */
 nav {
   height: 123px; width: 100%; 
@@ -38,14 +40,6 @@ nav #gnb li:last-child h5 {
   position: relative;
   transition: .5s;
 }
-/* nav #gnb li:last-child h5::before {
-  content: "";
-  position: absolute;
-  width: 0; height: 10px;
-  bottom: 0; left: 0;
-  transition: .5s;
-  background-color: rgba(70, 130, 180,.7);
-} */
 nav #gnb li:last-child h5:hover::before {
   width: 100%;
 }
@@ -90,6 +84,7 @@ nav #gnb li:last-child #menu_box a {
   padding-bottom: 3px;
   position: relative;
 }
+/* menu hover 스타일 */
 nav #gnb li:last-child #menu_box a::after {
   content: '';
   position: absolute;
@@ -109,6 +104,8 @@ nav #gnb li:last-child #menu_box li:hover a::after {
   position: absolute;
   top: 178px; left: 21.41vw;
 }
+
+/* project title */
 .title * {position: absolute;}
 .title {
   width: 100%; height: 180px;
@@ -142,11 +139,20 @@ nav #gnb li:last-child #menu_box li:hover a::after {
 }
 
 
-/* main */
+/****** main ******/
 main .box {
   width: 1063px; height: 1500px;
   margin: 0 auto;
   position: relative; 
+}
+
+/* main 공통값 */
+main .box {position: relative;}
+main .content {position: absolute; top: 200px; left: 50px;}
+main .content h3 {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 28px;
 }
 /* 각 박스 하단의 border값 삽입 */
 main .box::after {
@@ -158,32 +164,26 @@ main .box::after {
   bottom: 0; left: 50%;
   transform: translate(-50%);
 }
+/* 소제목 position값 */
 main h2 {position: absolute; top: 100px; left: 0; font-size: 50px;}
 
 /* main 01 _ design */
-.main01 {width: 100%; height: 1700px;}
+.main01 {width: 100%; height: 1800px;}
 main .main01 .design {
   height: inherit;
-  position: relative; 
 }
-.main01 .design .design_txt {
-  position: absolute;
-  top: 100px; left: 50px;
-  overflow: hidden;
-}
-.main01 .design .design_txt h3 {
-  font-family: 'Montserrat';
-  font-weight: 500;
-  font-size: 28px;
-  margin-top: 100px;
-}
+main .main01 .design h3 {margin-top: 147px;}
+
 .main01 .design .design_txt p {
-  font-family: 'GmarketSans'; font-weight: 300;
+  font-family: 'Pretendard';
+  font-weight: 300;
   color: #000;
 }
+.main01 .design .design_txt #concept h3 {margin-top: 0;}
 .main01 .design .design_txt #concept p {
-  font-size: 20px; line-height: 2.125rem;
+  font-size: 22px; line-height: 2.125rem;
   padding: 30px 30px;
+  word-break: keep-all;
 }
 .main01 .design .design_txt #keyword .keyBox {
   display: flex; 
@@ -202,7 +202,11 @@ main .main01 .design {
   text-align: center;
 }
 .main01 .design .design_txt #colorPalette .colorBox li {margin: 30px 30px;}
-.main01 .design .design_txt #colorPalette .colorBox .color {width: 100px; height: 100px; border-radius: 50%; color: rgba(0, 0, 0, 0); margin-bottom: 10px;}
+.main01 .design .design_txt #colorPalette .colorBox .color {
+  width: 100px; height: 100px; 
+  border-radius: 50%; color: rgba(0, 0, 0, 0); 
+  margin-bottom: 10px;
+}
 .main01 .design .design_txt #colorPalette .colorBox .color1 {background-color: #1e1e1e;}
 .main01 .design .design_txt #colorPalette .colorBox .color2 {background-color: #ffd700;}
 .main01 .design .design_txt #colorPalette .colorBox .color3 {background-color: #ececed; border: 1px solid var(--main-color);}
@@ -252,3 +256,88 @@ main .main01 .design {
 .main01 .design .design_txt #typography #eng #montserrat * {font-family: 'Montserrat';}
 .main01 .design .design_txt #typography #eng #montserrat .font li:nth-child(3) * {font-weight: 800;}
 .main01 .design .design_txt #typography #eng #montserrat h5{margin-top: 20px;}
+
+
+
+/* main 02 */
+.main02 {width: 100%; height: 596px;}
+.main02 .pubilsing { height: inherit}
+.main02 p {font-family: 'Pretendard'; font-weight: 300; font-size: 22px;}
+.main02 h3 {margin-bottom: 20px;}
+.main02 .pubilsing_txt {
+  width: 90%;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr) ;
+}
+.main02 #device p { font-family:'Montserrat'; font-weight: 400;}
+.main02 #device li {display: flex; margin-bottom: 10px;}
+.main02 #device li > p {width: 120px;}
+.main02 #about .tag {
+  display: grid;
+  grid-template: repeat(2, 35px) / repeat(3, 1fr);
+  font-size: 22px;
+  font-family:'Montserrat';
+  font-weight: 400;
+}
+.main02 #about .tag li {
+  margin-right: 10px;
+}
+.main02 #about .tag li:nth-child(3),
+.main02 #about .tag li:nth-child(6) {font-family: 'Pretendard'; font-weight: 300;}
+.main02 #goal {
+  grid-column: 2;
+  margin: 20px 0;
+}
+
+main .main03 .problems_solution {height: 984px;}
+.main03 .PS_txt h3 { font-family: 'Pretendard'; margin-bottom: 10px; font-size: 30px;}
+.main03 .PS_txt {left: 50px;}
+.main03 .PS_txt li {
+  margin-bottom: 90px; font-family: 'Pretendard';
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 2.5rem;
+  word-break: keep-all;
+}
+
+main .main04 {height: 714px;}
+.main04 p {
+  font-family: 'Pretendard';
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 2.5rem;
+  word-break: keep-all;
+  margin-bottom: 30px;
+}
+.view_site_wrapper {
+  position: relative;
+  width: 100vw; height: 10vh;
+}
+.view_site {
+  width: fit-content;
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.view_site li {margin-right: 10px; }
+.view_site a {font-size: 47px; font-family:'SilkSerif'; }
+.view_site li a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 20px;
+  bottom: 0; left: 0;
+  background-color: rgba(70, 130, 180,.5);
+  transition: .5s;
+}
+.view_site li:hover a::before {
+  width: 252.11px;
+}
+
+.view_site img {width: 50px; }
+
+footer {width: 100%; height: 85.7141px; padding: 0 50px;}
+footer p {font-size: 1.25rem; line-height: 85.7141px; font-weight: 300;}
