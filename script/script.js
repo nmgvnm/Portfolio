@@ -1,4 +1,7 @@
 
+addEventListener('click', (e) => {
+  e.preventDefault();
+})
 // 위로 버튼 동작
 const topBtn = document.querySelector('.top_btn');
 
