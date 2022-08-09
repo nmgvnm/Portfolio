@@ -1,7 +1,5 @@
 // a 태그 기본속성 이벤트 제거
-addEventListener('click', (e) => {
-  e.preventDefault();
-})
+
 $('#menuBtn').on('click', (e) => {
   $('#menu_box').slideToggle();
 });

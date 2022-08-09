@@ -1,9 +1,7 @@
 const toggleBtn = document.querySelector('.drop_menu');
 const mobileMenu = document.querySelector('#drop_menu_wrapper');
 
-addEventListener('click', (e) => {
-  e.preventDefault();
-})
+
 // 모바일 토글버튼
 toggleBtn.addEventListener('click',(e)=>{
   // 토글버튼
