@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+
+/* font NotoSerifKR */
+@font-face {
+  font-family: 'NotoSerifKR';
+  src: url(../../common/font/NotoSerifKR-ExtraLight.woff) format('woff');
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'NotoSerifKR';
+  src: url(../../common/font/NotoSerifKR-Light.woff) format('woff');
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'NotoSerifKR';
+  src: url(../../common/font/NotoSerifKR-Regular.woff) format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'NotoSerifKR';
+  src: url(../../common/font/NotoSerifKR-Medium.woff) format('woff');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'NotoSerifKR';
+  src: url(../../common/font/NotoSerifKR-SemiBold.woff) format('woff');
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'NotoSerifKR';
+  src: url(../../common/font/NotoSerifKR-Bold.woff) format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'NotoSerifKR';
+  src: url(../../common/font/NotoSerifKR-Black.woff) format('woff');
+  font-style: normal;
+  font-weight: 900;
+}
+
+/* font cafe24고운밤 */
+@font-face {
+  font-family: 'Cafe24Oneprettynight';
+  src: url(../../common/font/Cafe24Oneprettynight.woff) format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+
