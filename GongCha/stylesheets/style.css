@@ -7,7 +7,91 @@
   --main_color:#e1c4a7;
   --promise_color:#e4dcd2; 
 }
+::selection {
+  background-color: #000;
+  color: #fff;
+}
+a {color: #000;}
 /* 
   font-family: 'NotoSerifKR';
   font-family: 'Cafe24Oneprettynight';
 */
+
+/* header */
+header {width: 100vw; height: 960px; position: relative; overflow: hidden; background-color: burlywood;}
+header .logo {position: absolute; left: 50%; transform: translateX(-50%); z-index: 99;}
+header .header_img {
+  display: flex;
+}
+header .header_img li {
+width: 50vw; height: 960px;
+}
+header .header_img li:nth-child(1) {background: url(../images/header_img1.png)no-repeat 50% / cover; }
+header .header_img li:nth-child(2) {
+  position: relative;
+  background-color: var(--header_color);
+}
+header .header_img li:nth-child(2) img {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header_ani {
+  width: 1333px;
+  position: absolute;
+  bottom: -50px; right: -90px;
+  animation: header_ani infinite linear 30s;
+}
+ @keyframes header_ani {
+  100%{
+    transform: rotate(360deg);
+  }
+  
+ }
+ header .scroll {
+  height: 120px;
+  position: absolute;
+  bottom: 0px; left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  font-family: 'Cafe24Oneprettynight';
+ }
+ header .scroll::after {
+  position: absolute;
+  content: '';
+  width: 1px; height: 80px;
+  background-color: #000;
+  bottom: 0; left: 50%;
+  transform: translateX(-50%);
+ }
+
+ main .slide_item {
+  width: 100%; height: 100vh;
+  background-color: var(--menu_color1);
+ }
+ main .slide_item .text_box_wrapper {
+  font-family: 'Cafe24Oneprettynight';
+ }
+ main .slide_item .text_box_wrapper h2 {
+  font-size: 54px;
+ }
+ main .slide_item .text_box_wrapper h2 img {width: 9px;}
+ main .slide_item .text_box_wrapper p {
+  font-size: 28px;
+  line-height: 3.125rem;
+ }
+ main .slide_item .text_box_wrapper a {font-size: 28px;}
+ main .slide_item .text_box_wrapper img {width: 35px;}
+ main .slide_item .menu_list {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: bold;
+  font-size: 28px;
+ }
+ main .slide_item .menu_list li {
+  
+  
+ }
+ main .slide_item .menu_list li:nth-child(1) {width: 49px;}
+ main .slide_item .img_box {
+
+ }

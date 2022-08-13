@@ -1,8 +1,9 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 
 /* font NotoSerifKR */
-@font-face {
+/* @font-face {
   font-family: 'NotoSerifKR';
   src: url(../../common/font/NotoSerifKR-ExtraLight.woff) format('woff');
   font-style: normal;
@@ -10,7 +11,7 @@
 }
 @font-face {
   font-family: 'NotoSerifKR';
-  src: url(../../common/font/NotoSerifKR-Light.woff) format('woff');
+  src: url(../../common/font/NotoSerifKR-ExtraLight.woff) format('woff');
   font-style: normal;
   font-weight: 300;
 }
@@ -39,11 +40,17 @@
   font-weight: 700;
 }
 @font-face {
-  font-family: 'NotoSerifKR';
+  font-family: 'Noto Serif KR';
   src: url(../../common/font/NotoSerifKR-Black.woff) format('woff');
   font-style: normal;
   font-weight: 900;
 }
+@font-face {
+  font-family:'SilkSerif';
+  src: url(../../common/font/SilkSerif-Regular.woff) format('woff');
+  font-style: normal;
+  font-weight: 400;
+} */
 
 /* font cafe24고운밤 */
 @font-face {
