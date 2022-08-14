@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalble=no">
+  <title>Gong Cha</title>
+ <!-- reset.css -->
+ <link rel="stylesheet" href="../common/minireset.css">
+ <!-- font.css -->
+ <link rel="stylesheet" href="./stylesheets/font.css">
+ <!-- 내가 작성한 css -->
+ <link rel="stylesheet" href="./stylesheets/style.css">
+ <link rel="stylesheet" href="./stylesheets/style2.css">
+
+ <!-- jQuery.js -->
+ <script src="../common/jquery-3.6.0.min.js"></script>
+ <!-- 내가 작성한 script.js -->
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="./images/logo.png" alt="logo" width="146px"></div>
+    <ul class="header_img">
+      <li>bg1</li>
+      <li>
+        <img src="./images/header_img2.png" alt="img2">
+      </li>
+    </ul>
+    <img src="./images/header_ani.svg" alt="header_ani" class="header_ani">
+    <div class="scroll">
+      <p>Scroll Down</p>
+    </div>
+  </header>
+  <main>
+    <section class="slide_item menu_box1">
+      <div class="text_box_wrapper">
+        <div class="text_box">
+          <h2><img src="./images/menu_bar2.svg" alt="menu_bar2">오리지널 티</h2>
+          <p>티백이나 가루가 아닌 황실에 바치던<br>
+            잎차만 골라 1도 1초도 어기지 않고<br>
+            차마다 다른 황금률로 우려<br>
+            한 잔 한 잔 부드러움을 더해 만듭니다.</p>
+            <a href="#">메뉴 보러가기 <img src="./images/viewMore_arrow.svg" alt="arrow"></a>
+        </div>
+      </div>
+      <div class="menu_list_wrapper">
+        <ul class="menu_list">
+          <li><img src="./images/menu_bar1.svg" alt=""></li>
+          <li>Original Tea</li>
+          <li>Milk & Tea</li>
+          <li>Fruit & Tea</li>
+          <li>Season Menu</li>
+        </ul>
+      </div>
+      <div class="img_box_wrapper">
+        <div class="img_box">
+          <img src="./images/orignalTea_art.png" alt="orignalTea_art" id="orignalTea_art">
+          <img src="./images/orignalTea.gif" alt="orignalTea.gif" id="gif">
+          <img src="./images/orignalTea.png" alt="orignalTea" id="orignalTea">
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <script>
+    const a = 300;
+    const b = document.querySelectorAll('.slide_item');
+
+    const saFunc = function() {
+      for (const element of b) {
+        if (!element.classList.contains('show')) {
+          if (window.innerHeight > element.getBoundingClientRect().top + a) {
+            element.classList.add('show')
+          }
+        }
+      }
+    }
+
+    window.addEventListener('load', saFunc);
+    window.addEventListener('scroll', saFunc);
+  </script>
+</body>
+</html>
