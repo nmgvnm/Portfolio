@@ -8,6 +8,7 @@
   --promise_color:#e4dcd2; 
 }
 body {background-color: #f8f8f8;}
+/* 드래그 설정 */
 ::selection {
   background-color: #000;
   color: #fff;
@@ -15,13 +16,16 @@ body {background-color: #f8f8f8;}
 p, h1, h2, h3, h4, h5, a{ font-family: 'Cafe24Oneprettynight';}
 a {color: #000;}
 /* 
-  font-family: 'NotoSerifKR';
+  font-family: 'Noto Serif KR'; <- 웹폰트
   font-family: 'Cafe24Oneprettynight';
 */
 
 /* header */
 header {width: 100%; height: 100vh; position: relative; overflow: hidden; background-color: burlywood;}
+/* hader 로고 */
 header .logo {position: absolute; left: 50%; transform: translateX(-50%); z-index: 99; top: 20px;}
+
+/* header img 2장 설정 */
 header .header_img {
   display: flex;
 }
@@ -33,11 +37,15 @@ header .header_img li:nth-child(2) {
   position: relative;
   background-color: var(--header_color);
 }
+
+/* 두번째 이미지 중 제품이미지 중앙 배치 */
 header .header_img li:nth-child(2) img {
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* 돌아가는 애니메이션 */
 .header_ani {
   width: 1333px;
   position: absolute;
@@ -49,6 +57,7 @@ header .header_img li:nth-child(2) img {
     transform: rotate(360deg) ;
   }
   
+  /* 스크롤 표시 (!애니메이션 필요!) */
  }
  header .scroll {
   height: 120px;
@@ -58,6 +67,7 @@ header .header_img li:nth-child(2) img {
   font-size: 30px;
   /* font-size: 1.56vw; */
  }
+ /* line 추가 */
  header .scroll::after {
   position: absolute;
   content: '';
@@ -67,14 +77,17 @@ header .header_img li:nth-child(2) img {
   transform: translateX(-50%);
  }
 
+ /* main 공통 값 적용 */
+/* menu 컨텐츠 가운데 정렬 */
  .text_box_wrapper,
  .menu_list_wrapper,
- .img_box_wrapper {
+ .img_box_container {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
-.img_box_wrapper { right: 7.66vw;}
+/* 각 박스 가로 위치 조정 */
+.img_box_container { right: 7.66vw;}
 .menu_list_wrapper {left: 6.82vw;}
 .text_box_wrapper {left: 26vw;}
 
@@ -86,27 +99,80 @@ header .header_img li:nth-child(2) img {
   position: relative;
   overflow: hidden;
  }
- main .slide_item .text_box {
-  width: 425px; height: 362px;
+
+ /* 메뉴 backgroundColor 변경 */
+ main .slide_item .bg {
+  text-indent: -9999px;
+  width: 100%; height: 100%;
   position: relative;
-  
- }
- main .slide_item .text_box h2 {
+}
+main .slide_item .bg li {
+  width: 100%; height: 100%;
+  position: absolute;
+  opacity: 0;
+}
+
+main .slide_item .bg li:nth-child(1){background-color: rgb(254, 251, 231);}
+main .slide_item .bg li:nth-child(2){background-color: rgb(249, 235, 200);}
+main .slide_item .bg li:nth-child(3){background-color: rgba(255, 230, 230,.7);}
+main .slide_item .bg li:nth-child(4){background-color: rgba(218, 234, 241,.7);}
+main .slide_item .bg li.bgColor {
+  opacity: 1;
+}
+/* text box .css */
+/* menu_kor */
+.menu_kor {
+  width: 300px; height: 57px;
+  position: relative;
+  padding-left: 35px;
   font-size: 54px;
+  font-family: 'Cafe24Oneprettynight';
+  overflow: hidden;
   margin-bottom: 53px;
-  /* font-size: 2.81vw; */
+}
+.menu_kor #kor_bar {
+  position: absolute;
+  top: 0; left: 0;
+}
+
+
+ main .slide_item .text_box {
+  width: 470px; height: 362px;
+  position: relative;
  }
- main .slide_item .text_box h2 img {width: 9px; margin-right: 25px;}
- main .slide_item .text_box p {
+
+ main .slide_item .text_inner {
+  width: 100%; height: 250px;
+  position: absolute;
+  bottom: 0; left: 0;
+  overflow: hidden;
+ }
+ main .slide_item .text_inner p {
   font-size: 28px;
   /* font-size: 1.46vw; */
   line-height: 3.125rem;
  }
- main .slide_item .text_box h3 {
+ main .slide_item .text_inner .box {
+  width: 100%; height: 100%;
   position: absolute;
-  bottom: 0; right: 0;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all .5s;
  }
- main .slide_item .text_box a {
+ main .slide_item .text_inner .box .content {
+  width: 100%; height: 100%;
+  position: relative;
+ }
+ main .slide_item .text_inner .box.style {
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 9999;
+ }
+ main .slide_item .text_inner h3 {
+  position: absolute;
+  bottom: 0px; right: 0;
+ }
+ main .slide_item .text_box .box a {
   font-size: 28px;  display: block;
   position: relative;
 }
@@ -147,22 +213,52 @@ main .slide_item .text_box h3:hover a::before {
    margin-left: 68px;
    cursor: pointer;
  }
- main .slide_item .menu_list li:nth-child(1) {
+ main .slide_item .menu_list li.select {
+  color: rgb(56, 56, 56);
+  transition: .5s;
+ }
+ main .slide_item .menu_list #bar {
   width: 49px; 
   position: absolute;
   margin: 0;
   left: 0; top: 20px;
  }
- main .slide_item .img_box {
+
+
+ main .slide_item .img_box_wrapper {
   width: 680px; height: 611px;
   position: relative;
  }
- main .slide_item .img_box > * {
+ main .slide_item .img_box {
+  width: inherit; height: inherit;
+  position: absolute;
+  transition: .8s;
+  opacity: 0;
+  transform: translateX(500px);
+ }
+ main .slide_item .img_box .box {
+  width: inherit; height: inherit;
+  position: relative;
+ }
+ main .slide_item .img_box.move {
+  opacity: 1;
+  transform: translateX(0);
+ }
+ main .slide_item .img_box .box > * {
   position: absolute;
  }
- main .slide_item .img_box #orignalTea_art {left: 0; bottom: 10px; }
+ main .slide_item .img_box #art {left: 0; bottom: 10px; }
  main .slide_item .img_box #gif {width: 190px; left: 90px; top: 130px;}
- main .slide_item .img_box #orignalTea {right: 0; bottom: 0; }
+ main .slide_item .img_box #img {right: 0; bottom: 0; }
+
+ main .slide_item .box2 .box #art {left: 60px; bottom: 10px; }
+ main .slide_item .box2 .box #gif {width: 190px; left: 70px; top: 130px;}
+
+ main .slide_item .box3 .box #art {left: 80px; bottom: 10px; }
+ main .slide_item .box3 .box #gif {width: 190px; left: 90px; top: 130px;}
+ 
+ main .slide_item .box4 .box #art {left: 110px; bottom: 10px; }
+ main .slide_item .box4 .box #gif {width: 190px; left: 130px; top: 80px;}
 
  
  @media (max-width:1620px) {
@@ -354,6 +450,7 @@ main .slide_item .text_box h3:hover a::before {
   border-bottom: 2px solid var(--main_color);
   position: relative;
  }
+
  .news .news_list li p:nth-child(2) {
   padding-left: 50px;
   text-align: left;
