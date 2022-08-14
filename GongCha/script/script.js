@@ -31,7 +31,7 @@ $('.menu_list li').on('click', function () {
   $('.menu_list li').removeClass('select');
   $(this).addClass ('select')
 
-  // 메뉴 설명 멘트
+  // 메뉴 설명 멘트 
   $('.text_inner .box').removeClass('style');
   $('.text_inner .box').eq(num).addClass ('style')
 
