@@ -35,9 +35,11 @@ $('.menu_list li').on('click', function () {
   $('.text_inner .box').removeClass('style');
   $('.text_inner .box').eq(num).addClass ('style')
 
+  // bgColor 변경
   $('.bg li').removeClass('bgColor');
   $('.bg li').eq(num).addClass ('bgColor')
 
+  // 메뉴 이미지 변경
   $('.img_box_wrapper .img_box').removeClass('move');
   $('.img_box_wrapper .img_box').eq(num).addClass('move')
 })
@@ -65,6 +67,10 @@ const slide = () => {
   // background color
   $('.bg li').removeClass('bgColor');
   $('.bg li').eq(num).addClass ('bgColor')
+
+  // 메뉴 이미지 변경
+  $('.img_box_wrapper .img_box').removeClass('move');
+  $('.img_box_wrapper .img_box').eq(num).addClass('move')
 }
 
 let auto = setInterval(slide, 4000);
