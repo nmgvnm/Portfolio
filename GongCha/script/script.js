@@ -1,4 +1,4 @@
-const a = 250;
+const a =100;
 const b = document.querySelectorAll('.sa');
 
 const saFunc = function() {
@@ -67,4 +67,4 @@ const slide = () => {
   $('.bg li').eq(num).addClass ('bgColor')
 }
 
-// let auto = setInterval(slide, 4000);
+let auto = setInterval(slide, 4000);

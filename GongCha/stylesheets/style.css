@@ -87,7 +87,7 @@ header .header_img li:nth-child(2) img {
   transform: translateY(-50%);
 }
 /* 각 박스 가로 위치 조정 */
-.img_box_container { right: 7.66vw;}
+.img_box_container { right: 6.66vw;}
 .menu_list_wrapper {left: 6.82vw;}
 .text_box_wrapper {left: 26vw;}
 
@@ -112,10 +112,10 @@ main .slide_item .bg li {
   opacity: 0;
 }
 
-main .slide_item .bg li:nth-child(1){background-color: rgb(254, 251, 231);}
-main .slide_item .bg li:nth-child(2){background-color: rgb(249, 235, 200);}
-main .slide_item .bg li:nth-child(3){background-color: rgba(255, 230, 230,.7);}
-main .slide_item .bg li:nth-child(4){background-color: rgba(218, 234, 241,.7);}
+main .slide_item .bg li:nth-child(1){background-color: #fefbe7;}
+main .slide_item .bg li:nth-child(2){background-color: #f9ebc8;}
+main .slide_item .bg li:nth-child(3){background-color: #ffe6e6b3;}
+main .slide_item .bg li:nth-child(4){background-color: #daeaf1b3;}
 main .slide_item .bg li.bgColor {
   opacity: 1;
 }
