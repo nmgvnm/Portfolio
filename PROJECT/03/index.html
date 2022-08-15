@@ -10,12 +10,17 @@
 <!-- font.css -->
 <link rel="stylesheet" href="../../stylesheets/font.css">
 <!-- 내가 작성한 css -->
+<!-- project 공통 css -->
+<link rel="stylesheet" href="../common/style.css">
+<!-- project 01 css -->
 <link rel="stylesheet" href="./Stylesheets/style.css">
 
 <!-- jQuery -->
 <script src="../../common/jquery-3.6.0.min.js"></script>
+<!-- fontawesome -->
+<script src="https://kit.fontawesome.com/69b1de3212.js" crossorigin="anonymous"></script>
 <!-- 내가 작성한 js -->
-<script src="./script/script.js" defer></script>
+<script src="../common/script.js" defer></script>
 </head>
 <body>
   <div class="wrapper">
@@ -41,7 +46,9 @@
       </nav>
       <!-- 메인 디바이스 이미지 -->
       <div class="header_img">
-        <img src="./images/device.png" alt="device">
+        <div class="video_wrapper">
+          <video src="./images/header.mp4" autoplay muted loop ></video>
+        </div>
       </div>
     </header>
     <!-- 제목 -->
@@ -99,7 +106,7 @@
               <div class="font_wrapper">
                 <div id="kor">
                   <h4>KOR</h4>
-                  <section id="Cafe24">
+                  <section id="Cafe24_night">
                     <h5>카페24 고운밤</h5>
                       <ul class="font">
                         <li>
@@ -112,8 +119,8 @@
                 <!-- 영문폰트 -->
                 <div id="eng">
                   <h4>ENG</h4>
-                  <section id="montserrat">
-                    <h5>Montserrat</h5>
+                  <section id="NotoSerifKR">
+                    <h5>Noto serif KR</h5>
                       <ul class="font">
                         <li>
                           <h6>Aa</h6>
@@ -180,7 +187,7 @@
             </li>
             <li>
               <h3>jQuery .animate() 이용 / 자동 슬라이드</h3>
-              <p>메뉴의 슬라이드 효과를 넣기 위해서 jQuery의 .animate()를 이용하여 적용하였다. 그리고 setInterval()을 이용하여 움직임 이 자동슬라이드 되도록 하였다.  </p>
+              <p>메뉴의 슬라이드 효과를 넣기 위해서 jQuery의 .animate()를 이용하여 적용하였다. 그리고 setInterval()을 이용하여 움직임 이 자동슬라이드 되도록 하였다. 메뉴버튼을 클릭할때랑 자동슬라이드가 충돌해서 버벅버림이 있다. 조금 더 공부하여 추가 수정이 필요하다.  </p>
             </li>
           </ul>
         </div>
@@ -189,25 +196,21 @@
         <div class="review box">
           <h2>04. Review</h2>
           <div class="review_txt content">
-            <p>디자인부터 퍼블리싱까지 처음으로 제작한 첫 프로젝트입니다.
-              반응형으로 웹을 처음으로 제작하려다 보니 다양한 부분에서 신경 써야 할 것들이 많았습니다.
-              미디어 쿼리와 vw 가변 단위 값을 이용하여 사용자별 환경, 디바이스 제약을 해결하기 위해
-              노력하였습니다.</p>
-            <p>HTML과 CSS의 적용은 어느 정도 적응이 되어 적절한 태그들을 활용하여 레이아웃을
-              만드는 것은 조금 더 수월해졌습니다. 처음으로 JavaScript를 배웠고, 이후에 적용하며
-              변하는 웹사이트를 보면 신기하기도 하고, 뿌듯했습니다.
-              </p>
-            <p>이 작업을 진행하면서 많은 부분에서 고민을 했고, 모르는 부분들을 구글링을 통해 문제를
-              해결해나갔습니다. 아직 부족한 점도 많지만, 이번 프로젝트를 진행하면서 어떠한 방향으로
-              더 노력해나가야 하는지 알게 되었습니다.</p>
+            
           </div>
         </div>
       </div>
     </main>
+    <div class="slide_btn_wrapper">
+      <ul class="slide_btn">
+        <li class="back"><a href="https://nmgvnm.github.io/Portfolio/PROJECT/01/">PREV</a></li>
+        <li class="next"><a href="https://nmgvnm.github.io/Portfolio/PROJECT/04/">NEXT</a></li>
+      </ul>
+    </div>
     <div class="view_site_wrapper">
       <ul class="view_site">
-        <li><a href="https://nmgvnm.github.io/Portfolio/GongCha/" target="_blank">VIEW SITE</a></li>
-        <li><img src="./images/view_arrow.svg" alt="arrow"></li>
+        <li><a href="https://nmgvnm.github.io/Portfolio/GongCha"> VIEW SITE <img src="./images/view_arrow.svg" alt="arrow">
+        </a></li>
       </ul>
     </div>
     <!-- footer copyrights -->

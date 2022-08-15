@@ -82,3 +82,12 @@
   font-style: normal;
   font-weight: 400;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+
+@font-face {
+  font-family: 'Cafe24Oneprettynight';
+  src: url(../../common/font/Cafe24Oneprettynight.woff) format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
