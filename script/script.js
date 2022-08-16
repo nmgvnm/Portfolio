@@ -66,6 +66,11 @@ addEventListener('scroll', () => {
   }
 });
 
+// contact 회전
 
+$('article .contact h2').on('click', () => {
+  $('.contact h2').toggleClass('rotate')
+ $('.contact_inner').addClass('opacity')
+})
 
 

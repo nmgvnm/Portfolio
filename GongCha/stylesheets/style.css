@@ -1,3 +1,5 @@
+@import url(https://cdn.jsdelivr.net/jquery.fullpage/2.9.4/jquery.fullpage.min.css);
+
 :root {
   --header_color:#edede8;
   --menu_color1:#fdf9e8 ;
@@ -195,6 +197,7 @@ main .slide_item .text_box h3:hover a::before {
 
  main .slide_item .menu_list {
   font-family: 'Noto Serif KR', serif;
+  /* font-family: 'NotoSerifKR'; */
   font-weight: bold;
   font-size: 28px;
   /* font-size: 1.46vw; */

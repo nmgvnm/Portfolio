@@ -3,54 +3,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 
 /* font NotoSerifKR */
-/* @font-face {
+@font-face {
   font-family: 'NotoSerifKR';
-  src: url(../../common/font/NotoSerifKR-ExtraLight.woff) format('woff');
+  src: url(../../common/font/NotoSerifKR-ExtraLight.woff2) format('woff2');
   font-style: normal;
   font-weight: 100;
 }
 @font-face {
   font-family: 'NotoSerifKR';
-  src: url(../../common/font/NotoSerifKR-ExtraLight.woff) format('woff');
+  src: url(../../common/font/NotoSerifKR-Light.woff2) format('woff2');
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: 'NotoSerifKR';
-  src: url(../../common/font/NotoSerifKR-Regular.woff) format('woff');
+  src: url(../../common/font/NotoSerifKR-Regular.woff2) format('woff2');
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: 'NotoSerifKR';
-  src: url(../../common/font/NotoSerifKR-Medium.woff) format('woff');
+  src: url(../../common/font/NotoSerifKR-Medium.woff2) format('woff2');
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: 'NotoSerifKR';
-  src: url(../../common/font/NotoSerifKR-SemiBold.woff) format('woff');
+  src: url(../../common/font/NotoSerifKR-SemiBold.woff2) format('woff2');
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: 'NotoSerifKR';
-  src: url(../../common/font/NotoSerifKR-Bold.woff) format('woff');
+  src: url(../../common/font/NotoSerifKR-Bold.woff2) format('woff2');
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
-  font-family: 'Noto Serif KR';
-  src: url(../../common/font/NotoSerifKR-Black.woff) format('woff');
+  font-family: 'NotoSerifKR';
+  src: url(../../common/font/NotoSerifKR-Black.woff2) format('woff2');
   font-style: normal;
   font-weight: 900;
 }
+
+
 @font-face {
   font-family:'SilkSerif';
   src: url(../../common/font/SilkSerif-Regular.woff) format('woff');
   font-style: normal;
   font-weight: 400;
-} */
+}
 
 /* font cafe24고운밤 */
 @font-face {
