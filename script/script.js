@@ -68,9 +68,14 @@ addEventListener('scroll', () => {
 
 // contact 회전
 
-$('article .contact h2').on('click', () => {
-  $('.contact h2').toggleClass('rotate')
- $('.contact_inner').addClass('opacity')
+$('.contact li:first-child').on('click', () => {
+  $('.contact li:first-child').addClass('rotate_title');
+  $('.contact li:last-child').addClass('rotate_info');
+})
+$('.contact li:last-child').on('click', () => {
+  $('.contact li:first-child').removeClass('rotate_title');
+  $('.contact li:last-child').removeClass('rotate_info');
+
 })
 
 
