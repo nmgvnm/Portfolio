@@ -14,9 +14,9 @@ topBtn.addEventListener('click', e => {
 addEventListener('scroll', () => {
   let ht = document.documentElement.scrollTop;
   if (ht > 2000) {
-    topBtn.style.opacity = 1;
+    topBtn.style.display = "block";
   } else {
-    topBtn.style.opacity = 0;
+    topBtn.style.display = "none";
   }
 });
 

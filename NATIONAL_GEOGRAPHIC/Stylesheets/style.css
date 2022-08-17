@@ -396,17 +396,17 @@ footer .wrapper_footer .copyright ul a{
 
 }
 
-footer .wrapper_footer .info a{
-  color: #fff;
+footer .wrapper_footer .info a {
   font-size: 1.7rem;
   font-family: 'Pretendard';
-  display: block;
   width:fit-content;
   font-weight: 500;
   border: 2px solid var(--gray-color3);
   border-radius: 3px;
   padding: 15px 20px;
   transition: all .5s;
+  color: #fff;
+  display: block;
 }
 footer .wrapper_footer .info a:hover {
   background-color: var(--gray-color3);

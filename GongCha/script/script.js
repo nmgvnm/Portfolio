@@ -104,3 +104,24 @@ const slide = () => {
 }
 
 let auto = setInterval(slide, 4000);
+
+
+// top버튼
+const topBtn = document.querySelector('.top_button');
+
+topBtn.addEventListener('click', e => {
+  e.preventDefault();
+  scrollTo({
+    top:0,
+    behavior: "smooth",
+  });
+});
+
+addEventListener('scroll', () => {
+  let ht = document.documentElement.scrollTop;
+  if (ht > 2000) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+});
