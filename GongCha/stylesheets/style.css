@@ -22,7 +22,7 @@ a {color: #000;}
   font-family: 'Cafe24Oneprettynight';
 */
 
-/* header */
+/* header ------------------------------------------------------------------------------------ */
 header {width: 100%; height: 100vh; position: relative; overflow: hidden; background-color: burlywood;}
 /* hader 로고 */
 header .logo {position: absolute; left: 50%; transform: translateX(-50%); z-index: 99; top: 20px;}
@@ -79,148 +79,52 @@ header .header_img li:nth-child(2) img {
   transform: translateX(-50%);
  }
 
- /* main 공통 값 적용 */
-/* menu 컨텐츠 가운데 정렬 */
- .text_box_wrapper,
- .menu_list_wrapper,
- .img_box_container {
+
+ /* main -------------------------------------------------------------------------------------- */
+ /* 메뉴 backgroundColor 변경 */
+ 
+
+main {
+  width: 100%; height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu_btn_wrapper, .slide_item {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
-/* 각 박스 가로 위치 조정 */
-.img_box_container { right: 6.66vw;}
-.menu_list_wrapper {left: 6.82vw;}
-.text_box_wrapper {left: 26vw;}
 
-
-
- main .slide_item {
-  width: 100%; height: 100vh;
-  background-color: var(--menu_color1);
-  position: relative;
-  overflow: hidden;
- }
-
- /* 메뉴 backgroundColor 변경 */
- main .slide_item .bg {
-  text-indent: -9999px;
-  width: 100%; height: 100%;
-  position: relative;
-}
-main .slide_item .bg li {
-  width: 100%; height: 100%;
-  position: absolute;
-  opacity: 0;
-}
-
-main .slide_item .bg li:nth-child(1){background-color: #fefbe7;}
-main .slide_item .bg li:nth-child(2){background-color: #f9ebc8;}
-main .slide_item .bg li:nth-child(3){background-color: #ffe6e6b3;}
-main .slide_item .bg li:nth-child(4){background-color: #daeaf1b3;}
-main .slide_item .bg li.bgColor {
-  opacity: 1;
-}
-/* text box .css */
-/* menu_kor */
-.menu_kor {
-  width: 300px; height: 57px;
-  position: relative;
-  padding-left: 35px;
-  font-size: 54px;
-  font-family: 'Cafe24Oneprettynight';
-  overflow: hidden;
-  margin-bottom: 53px;
-}
-.menu_kor #kor_bar {
-  position: absolute;
-  top: 0; left: 0;
-}
-
-
- main .slide_item .text_box {
-  width: 470px; height: 362px;
-  position: relative;
- }
-
- main .slide_item .text_inner {
-  width: 100%; height: 250px;
-  position: absolute;
-  bottom: 0; left: 0;
-  overflow: hidden;
- }
- main .slide_item .text_inner p {
-  font-size: 28px;
-  /* font-size: 1.46vw; */
-  line-height: 3.125rem;
- }
- main .slide_item .text_inner .box {
-  width: 100%; height: 100%;
-  position: absolute;
-  opacity: 0;
-  transform: translateX(100px);
-  transition: all .5s;
- }
- main .slide_item .text_inner .box .content {
-  width: 100%; height: 100%;
-  position: relative;
- }
- main .slide_item .text_inner .box.style {
-  opacity: 1;
-  transform: translateX(0);
-  z-index: 9999;
- }
- main .slide_item .text_inner h3 {
-  position: absolute;
-  bottom: 0px; right: 0;
- }
- main .slide_item .text_box .box a {
-  font-size: 28px;  display: block;
-  position: relative;
-}
-main .slide_item .text_box a::before {
- content: '';
- width: 0; height: 15px;
- background-color: var(--main_color);
- position: absolute;
- bottom: 0; left: 0;
- z-index: -1;
- transition: .3s;
-}
-main .slide_item .text_box h3:hover a::before {
-  width: 145px;
-}
- main .slide_item .text_box a img {
-  width: 35px;
-  margin-top: 10px;
-}
-
- main .slide_item .menu_list {
+.menu_btn_wrapper {
+  left: 6.82vw;
   font-family: 'Noto Serif KR', serif;
-  /* font-family: 'NotoSerifKR'; */
   font-weight: bold;
   font-size: 28px;
-  /* font-size: 1.46vw; */
   color: var(--main_color);
+}
+.menu_btn_wrapper .menu_buttons {
+  width: 300px; height: 200px;
   position: relative;
- }
- main .slide_item .menu_list::before {
+}
+.menu_btn_wrapper .menu_buttons::before {
   content: '';
   width: 2px; height: 240px;
   background-color: var(--main_color);
   position: absolute;
   left: 25px; top: 0;
- }
- main .slide_item .menu_list li {
-   margin-bottom: 25px;
-   margin-left: 68px;
-   cursor: pointer;
- }
- main .slide_item .menu_list li.select {
+}
+.menu_btn_wrapper .menu_buttons li {
+  margin-bottom: 25px;
+  margin-left: 68px;
+  cursor: pointer;
+}
+.menu_btn_wrapper .menu_buttons li.select {
   color: rgb(56, 56, 56);
   transition: .5s;
- }
- main .slide_item .menu_list #bar {
+}
+
+.menu_btn_wrapper .menu_buttons #bar {
   width: 49px; 
   position: absolute;
   margin: 0;
@@ -228,53 +132,116 @@ main .slide_item .text_box h3:hover a::before {
  }
 
 
- main .slide_item .img_box_wrapper {
-  width: 680px; height: 611px;
-  position: relative;
- }
- main .slide_item .img_box {
-  width: inherit; height: inherit;
+/* bg */
+
+main .bg li {
+  width: 100%; height: 100%;
   position: absolute;
-  transition: .8s;
   opacity: 0;
-  transform: translateX(500px);
+}
+
+main .bg li:nth-child(1){background-color: #fefbe7;}
+main .bg li:nth-child(2){background-color: #f9ebc8;}
+main .bg li:nth-child(3){background-color: #ffe6e6b3;}
+main .bg li:nth-child(4){background-color: #daeaf1b3;}
+main .bg li.bgColor {
+  opacity: 1;
+}
+
+.slide_item {
+  width: 68vw; height: 611px;
+  right: 6.66vw;
+}
+.text_box_wrapper {position: relative; width: inherit; height: inherit;}
+
+/* [#kor_bar, .text_box_inner .slide_img_wrapper] position 설정 */
+.text_box_wrapper > * {
+  position: absolute;
+}
+/* svg */
+#kor_bar {top: 100px; left: 0;}
+
+.kor_title {top: 100px; left: 20px; font-size: 54px;} /* 한글 타이틀 */
+.text_box { top: 200px; left: 20px; } /* 음료 설명 wrapper */
+.text_box_inner { position: relative; height: 250px; width: 470px; font-size: 28px; line-height: 3.125rem;} /* 음료 설명글 */
+
+/* 메뉴 보러가기 버튼 */
+.text_box_inner h3 {
+  position: absolute;
+  bottom: 0px; right: 0;
+}
+/* arrow 이미지 */
+.text_box_inner h3 img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* hover시 동작 */
+.text_box_inner a::before {
+  content: '';
+  width: 0; height: 15px;
+  background-color: var(--main_color);
+  position: absolute;
+  bottom: 14px; left: 0;
+  z-index: -1;
+  transition: .3s;
  }
- main .slide_item .img_box .box {
+ .text_box_inner h3:hover a::before {
+  width: 145px;
+ }
+/* 음료 이미지 */
+.slide_img_wrapper {
+  width: 680px; height: 611px;
+  right: 0;
+}
+.slide_item .slide_img {
   width: inherit; height: inherit;
   position: relative;
- }
- main .slide_item .img_box.move {
+}
+
+.slide_item .slide_img img {position: absolute;}
+.slide_item .slide_img #art {left: 0; bottom: 10px;}
+.slide_item .slide_img #gif {width: 190px; left: 90px; top: 130px;}
+.slide_item .slide_img #img {right: 0; bottom: 0;}
+
+.slide_item .list2 #art {left: 60px; bottom: 10px; }
+.slide_item .list2 #gif {width: 190px; left: 70px; top: 130px;}
+.slide_item .list3 #art {left: 80px; bottom: 10px; }
+.slide_item .list3 #gif {width: 190px; left: 90px; top: 130px;}
+.slide_item .list4 #art {left: 110px; bottom: 10px; }
+.slide_item .list4 #gif {width: 190px; left: 130px; top: 80px;}
+
+.slide_item .slide_img {
+  transform: translateX(120%);
+  transition: .6s ease-in-out;
+}
+
+/* move */
+.slide_item .text_box_wrapper .move {
+  transform: translateY(35%);
+  transition: .4s ease-in-out;
+  opacity: 0;
+}
+
+/* .slide_item.active */
+.slide_item.active {
+  visibility: visible;
+  z-index: 10;
+}
+
+.slide_item.active .text_box_wrapper h2,
+.slide_item.active .text_box_wrapper p,
+.slide_item.active .text_box_wrapper h3 {
+  transform: translateY(0);
   opacity: 1;
+  visibility: visible;
+}
+
+.slide_item.active .slide_img {
   transform: translateX(0);
- }
- main .slide_item .img_box .box > * {
-  position: absolute;
- }
- main .slide_item .img_box #art {left: 0; bottom: 10px; }
- main .slide_item .img_box #gif {width: 190px; left: 90px; top: 130px;}
- main .slide_item .img_box #img {right: 0; bottom: 0; }
+}
 
- main .slide_item .box2 .box #art {left: 60px; bottom: 10px; }
- main .slide_item .box2 .box #gif {width: 190px; left: 70px; top: 130px;}
-
- main .slide_item .box3 .box #art {left: 80px; bottom: 10px; }
- main .slide_item .box3 .box #gif {width: 190px; left: 90px; top: 130px;}
- 
- main .slide_item .box4 .box #art {left: 110px; bottom: 10px; }
- main .slide_item .box4 .box #gif {width: 190px; left: 130px; top: 80px;}
-
- 
- @media (max-width:1620px) {
-  * {transition: .5s;}
-  main .slide_item .img_box {
-    width: 600px; height: 600px;
-   }
-  main .slide_item .img_box #orignalTea_art { max-width: 250px; }
-  main .slide_item .img_box #gif {width: 150px; left: 90px; top: 180px;}
-  main .slide_item .img_box #orignalTea {width: 390px; }
- }
-
- /* article promise */
+ /* article promise ------------------------------------------------------------------------------ */
  article .promise {
   width: 100%; 
   position: relative;
@@ -397,7 +364,7 @@ main .slide_item .text_box h3:hover a::before {
  }
 
 
- /* banner */
+ /* banner -------------------------------------------------------------------------------------- */
  .banner { 
     width: 100%; height: 994.0665px; 
     position: relative;
@@ -425,7 +392,7 @@ main .slide_item .text_box h3:hover a::before {
  }
 
 
- /* news */
+ /* news ----------------------------------------------------------------------------------------- */
  .news {width: 100%; padding-bottom: 200px; text-align: center;}
  .news img { 
     width: 85px;
@@ -481,7 +448,7 @@ main .slide_item .text_box h3:hover a::before {
  } */
 
 
- /* footer */
+ /* footer ------------------------------------------------------------------------------------- */
  footer{
   width: 100%; height: 250px; position: relative; background-color: #fffaf4;
   

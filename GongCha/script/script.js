@@ -1,14 +1,10 @@
 /* window.addEventListener("wheel", function(e){
 	e.preventDefault();
 },{passive : false});
-
 var $html = $("html");
 var page = 1;
 var lastPage = $("").length;
 $html.animate({scrollTop:0},10);
-
-
-
 $(window).on("wheel", function(e){
  
 	if($html.is(":animated")) return;
@@ -27,10 +23,8 @@ $(window).on("wheel", function(e){
 	$html.animate({scrollTop : posTop});
  
 }); */
-
 const a =100;
 const b = document.querySelectorAll('.sa');
-
 const saFunc = function() {
   for (const element of b) {
     if (!element.classList.contains('show')) {
@@ -40,70 +34,52 @@ const saFunc = function() {
     }
   }
 }
-
 window.addEventListener('load', saFunc);
 window.addEventListener('scroll', saFunc);
 
+$('.slide_item').eq(0).addClass('active');
 
-// 클릭할 때 변화
-// menu title 선택
-$('.menu_list li').on('click', function () {
+$('.menu_buttons li').on('click', function () {
   let num = $(this).index();
-  // 메뉴 선택 bar 이동
-  $('.menu_list li #bar').animate({
+
+  $('.menu_buttons li #bar').animate({
     marginTop : 65 * num + 'px'
   }, 300)
-  // 메뉴 타이틀 한글
-  $('.menu_kor #orignal').animate({
-    marginTop : -57 * num + 'px' 
-  })
+
   // 메뉴 타이틀 영어
-  $('.menu_list li').removeClass('select');
+  $('.menu_buttons li').removeClass('select');
   $(this).addClass ('select')
 
-  // 메뉴 설명 멘트 
-  $('.text_inner .box').removeClass('style');
-  $('.text_inner .box').eq(num).addClass ('style')
+  // active 활성화
+  $('.slide_item').removeClass('active');
+  $('.slide_item').eq(num).addClass('active')
 
   // bgColor 변경
   $('.bg li').removeClass('bgColor');
   $('.bg li').eq(num).addClass ('bgColor')
-
-  // 메뉴 이미지 변경
-  $('.img_box_wrapper .img_box').removeClass('move');
-  $('.img_box_wrapper .img_box').eq(num).addClass('move')
-})
+});
 
 
-// 자동슬라이드
-let num = 0;
+ let num = 0;
 const slide = () => {
   num = (num + 1) % 4;
-
-  $('.menu_list li #bar').animate({
+  $('.menu_buttons li #bar').animate({
     marginTop : 65 * num + 'px'
   }, 300)
-  // 메뉴 타이틀 한글
-  $('.menu_kor #orignal').animate({
-    marginTop : -57 * num + 'px' 
-  })
+
   // 메뉴 타이틀 영어
-  $('.menu_list li').eq(num).addClass('select').siblings().removeClass('select');
+  $('.menu_buttons li').eq(num).addClass('select').siblings().removeClass('select');
 
-  // 메뉴 설명 멘트
-  $('.text_inner .box').removeClass('style');
-  $('.text_inner .box').eq(num).addClass ('style')
+  // active 활성화
+  $('.slide_item').removeClass('active');
+  $('.slide_item').eq(num).addClass('active')
 
-  // background color
+  // bgColor 변경
   $('.bg li').removeClass('bgColor');
   $('.bg li').eq(num).addClass ('bgColor')
-
-  // 메뉴 이미지 변경
-  $('.img_box_wrapper .img_box').removeClass('move');
-  $('.img_box_wrapper .img_box').eq(num).addClass('move')
 }
+let auto = setInterval(slide, 5000);
 
-let auto = setInterval(slide, 4000);
 
 
 // top버튼
@@ -124,4 +100,4 @@ addEventListener('scroll', () => {
   } else {
     topBtn.style.display = "none";
   }
-});
+}); 

@@ -33,9 +33,6 @@
 </head>
 <body>
  <header>
-    <div class="side_menu">
-      
-    </div>
     <div class="logo"><img src="./images/logo.png" alt="logo" width="146px"></div>
     <ul class="header_img">
       <li>bg1</li>
@@ -49,97 +46,108 @@
     </div>
   </header>
   <main>
-    <section class="slide_item menu_box1 sa" id="fullpage">
-      <ul class="bg">
-        <li id="bg1" class="bgColor">bg1</li>
-        <li id="bg2" >bg2</li>
-        <li id="bg3" >bg3</li>
-        <li id="bg4" >bg4</li>
+    <!-- bg -->
+    <ul class="bg">
+      <li id="bg1" class="bgColor">bg1</li>
+      <li id="bg2" >bg2</li>
+      <li id="bg3" >bg3</li>
+      <li id="bg4" >bg4</li>
+    </ul>
+    <!-- 메뉴 선택버튼 -->
+    <div class="menu_btn_wrapper">
+      <ul class="menu_buttons">
+        <li class="select">Original Tea</li>
+        <li>Milk & Tea</li>
+        <li>Fruit & Tea</li>
+        <li>Season Menu</li>
+        <li><img src="./images/menu_bar1.svg" alt="menu_bar1" id="bar" width="49px" id="bar"></li>
       </ul>
-      <div class="text_box_wrapper">
-        <div class="text_box">
-          <ul class="menu_kor">
-            <li id="orignal">오리지널 티</li>
-            <li>밀크 티</li>
-            <li>과일 믹스</li>
-            <li>시즌메뉴</li>
-            <li><img src="./images/menu_bar2.svg" alt="menu_bar2" width="9px" id="kor_bar"></li>
-          </ul>
-          <div class="text_inner">
-            <div class="box box1 style">
-              <div class="content">
-                <p>티백이나 가루가 아닌 황실에 바치던<br>
-                  잎차만 골라 1도 1초도 어기지 않고<br>
-                  차마다 다른 황금률로 우려<br>
-                  한 잔 한 잔 부드러움을 더해 만듭니다.</p>
-                  <h3><a href="Javascript:;">메뉴 보러가기 <img src="./images/viewMore_arrow.svg" alt="arrow"></a></h3>
-              </div>
-            </div>
-            <div class="box box2">
-              <p>최적의 자연이 키워낸 입차만 골라<br>
-                각 차종에 맞는 황금률로 우려 담백한 우유와<br>
-                헌, 카라멜 등 새로운 맛을 더해 만듭니다.</p>
-                <h3><a href="Javascript:;">메뉴 보러가기 <img src="./images/viewMore_arrow.svg" alt="arrow"></a></h3>
-            </div>
-            <div class="box box3">
-              <p>찻잎의 푸름을 간직한 녹차만 골라<br>
-                최적의 온도 89도로 우려<br>
-                달콤상큼한 과일을 더해 만듭니다.</p>
-                <h3><a href="Javascript:;">메뉴 보러가기 <img src="./images/viewMore_arrow.svg" alt="arrow"></a></h3>
-            </div>
-            <div class="box box3">
-              <p>시즌별로 메뉴들을 새로 출시하여<br>
-                각양각색의 음료를 맛볼 수 있도록<br>
-                다양한 종류의 메뉴를 만듭니다.</p>
-                <h3><a href="Javascript:;">메뉴 보러가기 <img src="./images/viewMore_arrow.svg" alt="arrow"></a></h3>
-            </div>
-            
+    </div>
 
+    <section class="slide_item slide_box1">
+      <div class="text_box_wrapper">
+        <img src="./images/menu_bar2.svg" alt="menu_bar2" width="9px" id="kor_bar">
+        <h2 class="kor_title move">오리지널 티</h2>
+        <div class="text_box">
+          <div class="text_box_inner">
+            <p class="move">티백이나 가루가 아닌 황실에 바치던<br>
+              잎차만 골라 1도 1초도 어기지 않고<br>
+              차마다 다른 황금률로 우려<br>
+              한 잔 한 잔 부드러움을 더해 만듭니다.</p>
+           <h3 class="move"><a href="Javascript:;">메뉴 보러가기 <img src="./images/viewMore_arrow.svg" alt="arrow" width="35px"></a></h3>
+          </div>
+        </div>
+        <div class="slide_img_wrapper">
+          <div class="slide_img list1">
+            <img src="./images/orignalTea_art.png" alt="orignalTea_art" id="art">
+            <img src="./images/orignalTea.gif" alt="orignalTea.gif" id="gif">
+            <img src="./images/orignalTea.png" alt="orignalTea" id="img">
           </div>
         </div>
       </div>
-      <div class="menu_list_wrapper">
-        <ul class="menu_list">
-          <li class="select">Original Tea</li>
-          <li>Milk & Tea</li>
-          <li>Fruit & Tea</li>
-          <li>Season Menu</li>
-          <li><img src="./images/menu_bar1.svg" alt="menu_bar1" id="bar"></li>
-        </ul>
+    </section>
+    <section class="slide_item slide_box2">
+      <div class="text_box_wrapper">
+        <img src="./images/menu_bar2.svg" alt="menu_bar2" width="9px" id="kor_bar">
+        <h2 class="kor_title move">밀크 티</h2>
+        <div class="text_box">
+          <div class="text_box_inner">
+            <p class="move">최적의 자연이 키워낸 입차만 골라<br>
+              각 차종에 맞는 황금률로 우려 담백한 우유와<br>
+              헌, 카라멜 등 새로운 맛을 더해 만듭니다.</p>
+            <h3 class="move"><a href="Javascript:;">메뉴 보러가기 <img src="./images/viewMore_arrow.svg" alt="arrow" width="35px"></a></h3>
+          </div>
+        </div>
+        <div class="slide_img_wrapper">
+          <div class="slide_img list2">
+            <img src="./images/milkTea_art.gif.png" alt="orignalTea_art" id="art">
+            <img src="./images/milkTea.gif" alt="orignalTea.gif" id="gif">
+            <img src="./images/milkTea.png" alt="orignalTea" id="img">
+          </div>
+        </div>
       </div>
-      <div class="img_box_container">
-        <ul class="img_box_wrapper">
-          <li class="img_box box1 move">
-            <div class="box">
-              <img src="./images/orignalTea_art.png" alt="orignalTea_art" id="art">
-              <img src="./images/orignalTea.gif" alt="orignalTea.gif" id="gif">
-              <img src="./images/orignalTea.png" alt="orignalTea" id="img">
-            </div>
-          </li>
-          <li class="img_box box2">
-            <div class="box">
-              <img src="./images/milkTea_art.gif.png" alt="orignalTea_art" id="art">
-              <img src="./images/milkTea.gif" alt="orignalTea.gif" id="gif">
-              <img src="./images/milkTea.png" alt="orignalTea" id="img">
-            </div>
-          </li>
-          <li class="img_box box3">
-            <div class="box">
-              <img src="./images/fruitsTea_art.png" alt="orignalTea_art" id="art">
+    </section>
+    <section class="slide_item slide_box3">
+      <div class="text_box_wrapper">
+        <img src="./images/menu_bar2.svg" alt="menu_bar2" width="9px" id="kor_bar">
+        <h2 class="kor_title move">과일 믹스</h2>
+        <div class="text_box">
+          <div class="text_box_inner">
+            <p class="move">찻잎의 푸름을 간직한 녹차만 골라<br>
+              최적의 온도 89도로 우려<br>
+              달콤상큼한 과일을 더해 만듭니다.</p>
+          <h3 class="move"><a href="Javascript:;">메뉴 보러가기 <img src="./images/viewMore_arrow.svg" alt="arrow" width="35px"></a></h3>
+          </div>
+        </div>
+        <div class="slide_img_wrapper">
+          <div class="slide_img list3">
+            <img src="./images/fruitsTea_art.png" alt="orignalTea_art" id="art">
               <img src="./images/fruitsTea.gif" alt="orignalTea.gif" id="gif">
               <img src="./images/fruitsTea.png" alt="orignalTea" id="img">
-            </div>
-          </li>
-          <li class="img_box box4">
-            <div class="box">
-              <img src="./images/seasonMenu2.png" alt="orignalTea_art" id="art">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slide_item slide_box4">
+      <div class="text_box_wrapper">
+        <img src="./images/menu_bar2.svg" alt="menu_bar2" width="9px" id="kor_bar">
+        <h2 class="kor_title move">시즌메뉴</h2>
+        <div class="text_box">
+          <div class="text_box_inner">
+            <p class="move">시즌별로 메뉴들을 새로 출시하여<br>
+              각양각색의 음료를 맛볼 수 있도록<br>
+              다양한 종류의 메뉴를 만듭니다.</p>
+            <h3 class="move"><a href="Javascript:;">메뉴 보러가기 <img src="./images/viewMore_arrow.svg" alt="arrow" width="35px"></a></h3>
+          </div>
+        </div>
+        <div class="slide_img_wrapper">
+          <div class="slide_img list4">
+            <img src="./images/seasonMenu2.png" alt="orignalTea_art" id="art">
               <img src="./images/seasonMenu.gif" alt="orignalTea.gif" id="gif">
               <img src="./images/seasonMenu1.png" alt="orignalTea" id="img">
-            </div>
-          </li>
-      </ul>
+          </div>
+        </div>
       </div>
-
     </section>
   </main>
 <article>
