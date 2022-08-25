@@ -87,7 +87,7 @@
 
 @font-face {
   font-family: 'Cafe24Oneprettynight';
-  src: url(../../common/font/Cafe24Oneprettynight.woff) format('woff');
+  src: url(../common/font/Cafe24Oneprettynight.woff) format('woff');
   font-style: normal;
   font-weight: 400;
 }

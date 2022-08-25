@@ -1,224 +1,308 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalble=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalble=no"
+    />
 
-<!-- og -->
-<meta property="og:title" content="PROJECT 03">
-<meta property="og:url" content="https://nmgvnm.github.io/Portfolio/PROJECT/03/">
-<meta property="og:image" content="https://nmgvnm.github.io/Portfolio/PROJECT/03/project03.png">
-<meta property="og:description" content="project03_Gong cha">
-<meta property="og:type" content="website">
+    <!-- og -->
+    <meta property="og:title" content="PROJECT 03" />
+    <meta
+      property="og:url"
+      content="https://nmgvnm.github.io/Portfolio/PROJECT/03/"
+    />
+    <meta
+      property="og:image"
+      content="https://nmgvnm.github.io/Portfolio/PROJECT/03/project03.png"
+    />
+    <meta property="og:description" content="project03_Gong cha" />
+    <meta property="og:type" content="website" />
 
+    <!-- favicon -->
+    <link rel="icon" href="../../favicon_32x32.png" sizes="any" />
+    <link rel="icon" href="../../favicon_180x180.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../../favicon_512x512.png" />
 
-<!-- favicon -->
-<link rel="icon" href="../../favicon_32x32.png" sizes="any">
-<link rel="icon" href="../../favicon_180x180.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="../../favicon_512x512.png">
+    <title>PROJECT 02</title>
+    <!-- reset.css -->
+    <link rel="stylesheet" href="../../common/reset.css" />
+    <!-- font.css -->
+    <link rel="stylesheet" href="../../stylesheets/font.css" />
 
-<title>PROJECT 03</title>
-<!-- reset.css -->
-<link rel="stylesheet" href="../../common/reset.css">
-<!-- font.css -->
-<link rel="stylesheet" href="../../stylesheets/font.css">
-
-<!-- 내가 작성한 css -->
-<!-- project 공통 css -->
-<link rel="stylesheet" href="../common/style.css">
-<!-- project 02 css -->
-<link rel="stylesheet" href="./stylesheets/style.css">
-<!-- jQuery -->
-<script src="../../common/jquery-3.6.0.min.js"></script>
-<!-- fontawesome -->
-<script src="https://kit.fontawesome.com/69b1de3212.js" crossorigin="anonymous"></script>
-<!-- 내가 작성한 js -->
-<script src="../common/script.js" defer></script>
-</head>
-<body>
-  <div class="wrapper">
-     <!-- header -->
-     <header>
-      <!-- 상단 메뉴 -->
-      <nav>
-        <ul id="gnb">
-          <li><a href="https://nmgvnm.github.io/Portfolio"><img src="../01/images/SVG/logo.svg" alt="logo"></a></li>
-          <li>
-            <div class="btn_wrapper">
-              <h5 id="menuBtn" class="open"><a href="#">MENU</a></h5>
-              <!-- <h5 id="menuBtn2" class="close"><a href="#"> CLOSE</a></h5> -->
+    <!-- 내가 작성한 css -->
+    <!-- project 공통 css -->
+    <!-- <link rel="stylesheet" href="../common/style.css" /> -->
+    <!-- project 02 css -->
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <!-- jQuery -->
+    <script src="../../common/jquery-3.6.0.min.js"></script>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/69b1de3212.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- 내가 작성한 js -->
+    <script src="../common/script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <header>
+        <!-- 상단 메뉴 -->
+        <nav>
+          <ul id="gnb">
+            <li>
+              <a href="https://nmgvnm.github.io/Portfolio">
+                <img src="../01/images/SVG/logo.svg" alt="logo" />
+              </a>
+            </li>
+            <li>
+              <div class="btn_wrapper">
+                <h5 id="menuBtn" class="open"><a href="#">MENU</a></h5>
+                <!-- <h5 id="menuBtn2" class="close"><a href="#"> CLOSE</a></h5> -->
+              </div>
+              <ul class="menu" id="menu_box">
+                <li><a href="https://nmgvnm.github.io/Portfolio/">Home</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- header title page -->
+        <div class="title_page">
+          <div class="title">
+            <h3>Team Project</h3>
+            <h2>Breaking News</h2>
+            <h5>모바일 뉴스앱 UI/UX 리디자인</h5>
+          </div>
+          <ul class="info">
+            <li>팀명 : 같이나아가조</li>
+            <li>팀원 : 이윤진, 조현비, 원서영</li>
+            <li>기간 : 2022. 04. 29 ~ 2022. 06. 30</li>
+          </ul>
+          <div class="app_img">
+            <img src="./images/header_img.svg" alt="header_img" />
+          </div>
+        </div>
+      </header>
+      <!-- 제목 -->
+      <main>
+        <div class="main01 main_box">
+          <h2>01. UX Vision</h2>
+          <div class="inner">
+            <div class="before">
+              <p>변경 전</p>
+              <h5>
+                소규모 언론사들을 지원하는 방식으로<br />지역 뉴스 생태계를
+                되살리는 데 힘쓰고 있다
+              </h5>
             </div>
-            <ul class="menu" id="menu_box">
-              <li><a href="https://nmgvnm.github.io/Portfolio/">Home</a></li>
-              <li><a href="#">Project</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+            <div class="arrow">
+              <img src="./images/arrow.svg" alt="arrow" width="68.4px" />
+            </div>
+            <div class="after">
+              <p>변경 후</p>
+              <h5>방대한 기사를 보기 쉽게 전달한다</h5>
+            </div>
+          </div>
+        </div>
+        <div class="main02 main_box">
+          <h2>02. AS-IS</h2>
+          <div class="inner">
+            <div class="as-is_img">
+              <figure>
+                <img src="./images/as-is.png" alt="as-is_img" />
+                <figcaption>[ 메인페이지 ]</figcaption>
+              </figure>
+            </div>
+            <ul class="as-is_txt">
+              <li>- 여백없이 꽉 채운 화면 구성</li>
+              <li>- 뉴스와 광고의 시작적 구분 불가</li>
+              <li>- 일관성 없는 아이콘</li>
+              <li>- 직관적이지 못한 카테고리 분류</li>
+              <li>- 불필요한 기능의 중복 배치</li>
             </ul>
+          </div>
+        </div>
+        <div class="main03 main_box">
+          <h2>03. TO-BE</h2>
+          <div class="inner">
+            <div class="prototype">
+              <figure>
+                <div class="video">
+                  <video
+                    src="./images/prototype.mp4"
+                    autoplay
+                    loop
+                    muted
+                  ></video>
+                </div>
+                <figcaption>[ prototype ]</figcaption>
+              </figure>
+            </div>
+            <ul class="to-be_img">
+              <li>
+                <figure>
+                  <img src="./images/main_page.png" alt="to-be_img1" />
+                  <figcaption>[ 메인페이지 ]</figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="./images/bookMark_page.png" alt="to-be_img2" />
+                  <figcaption>[ 북마크 페이지 ]</figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="./images/article_page.png" alt="to-be_img3" />
+                  <figcaption>[ 기사본문 ]</figcaption>
+                </figure>
+              </li>
+            </ul>
+            <ul class="to-be_txt">
+              <li>- App의 전체 디자인을 직관적이며 사용자 친화적으로 재구성</li>
+              <li>- 메인 페이지의 게시글 간소화(가독성 있는 구성)</li>
+              <li>- 불필요한 기능/중복메뉴 제거 및 이질적인 아이콘 통일</li>
+            </ul>
+          </div>
+        </div>
+        <div class="main04 main_box">
+          <h2>04. Progress</h2>
+          <div class="inner">
+            <p>
+              모바일 어플 선정 - 데스크리서치 - 타켓 선정 - 개선사항 및 장단점
+              분석 - 경쟁사앱 분석 - UX비전 설정 - <br />
+              페르소나 설정 - 페르소나 기반 사용자시나리오 작성 - 와이어프레임
+              제작 - 디자인가이드 - 화면 디자인 - <br />
+              프로토타입 제작
+            </p>
+          </div>
+        </div>
+        <div class="main05 main_box">
+          <h2>05. Evaluation</h2>
+          <div class="inner">
+            <ul class="inner_txt">
+              <li>
+                <h3>My role</h3>
+                <ul class="txt_list">
+                  <li>- 선정 앱 및 경쟁사 앱 데스크 리서치</li>
+                  <li>- 페르소나 기반 리서치</li>
+                  <li>- 참고 디자인 리서치</li>
+                  <li>- 프로토타입 화면디자인</li>
+                  <li>- 와이어 프레임 공동 제작</li>
+                </ul>
+              </li>
+              <li>
+                <h3>Strengths</h3>
+                <ul class="txt_list">
+                  <li>
+                    - 경쟁사 앱 분석 및 사용자 시나리오 등의 자료를 정리하고
+                    발표 자료를 제작하였습니다
+                  </li>
+                  <li>
+                    - 프로젝트를 진행하면서 적극적으로 의견을 제시하며, 나아갈
+                    방향을 잡음
+                  </li>
+                  <li>
+                    - 팀원들이 제시한 아이디어의 의견을 묻고, 장점을 뽑아 조율
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>Weakness</h3>
+                <ul class="txt_list">
+                  <li>
+                    - 자료조사의 한계로 인해 정확한 현재 사용자분석에 대한 자료
+                    부족
+                  </li>
+                  <li>
+                    - 한정된 시간으로인한 북마크 페이지 부분 디테일 수정이 잘
+                    안되었음
+                  </li>
+                  <li>
+                    - 사용자 입장을 고려하여 디자인을 한다는 점이 어색해서
+                    아이콘제작에 어려움을 느낌
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <h3>What I learned</h3>
+                <ul class="txt_list">
+                  <li>- UI/UX 디자인이란 어떤 것인지에 관해 공부함</li>
+                  <li>
+                    - 사용자 경험 중심의 사고와 디자인, 퍼블리싱을 하고자
+                    의식적으로 노력함
+                  </li>
+                  <li>
+                    - 팀 프로젝트를 통해 협업과 커뮤니케이션의 중요성에 대해
+                    알게됨
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main06 main_box">
+          <h2>06. Review</h2>
+          <div class="inner">
+            <p>
+              [작은 프로젝트를 경험]<br />
+              처음 경험해 보는 팀 작업에 부담감도 있고 걱정도 있었습니다. 하지만
+              오히려 열심히 하는 팀원들로 인해 혼자 작업을 할 때보다 <br />
+              시너지가 생겨서 좋은 협업을 경험했습니다. 각자 맡은 파트를 해결해
+              나아가면서 서로 피드백을 주고 함께 수용하며 <br />
+              더 나은 결과물을 만들어 낼 수 있었습니다.
+            </p>
+            <p>
+              웹이란 분야를 하는 데에 있어, 다양한 직군의 이해가 바탕이 된다면
+              더 잘 할 수 있는 것이라는 걸 이번 프로젝트에서 알게 되었습니다.<br />
+              사용자 경험 기반의 디자인이 결국 구조를 만들고 사용자가 최대한
+              쉽게 원하는 바를 얻을 수 있게 만드는 것입니다. <br />
+              이는 웹페이지를 제작하면서 구조를 짜고 코딩하는 데 많은 도움이
+              되었습니다.
+            </p>
+            <p>
+              이번 프로젝트를 하면서 어려웠던 점은 크게 없었습니다.<br />
+              협업을 통하여 진행하는 과정에서 팀원분들 모두가 너무 열심히
+              해주셨고, 저 또한 함께 열심히 하게 되었습니다.<br />
+              나의 의견에 확신이 없을 때 논의할 수 있다는 점이 좋았습니다.
+            </p>
+            <p>
+              하지만 한 가지 아쉬웠던 점은 최대한 완성도를 높이고 싶었으나
+              프로젝트에는 정해진 시간이란 것이 있기 때문에 디자인적으로 <br />
+              디테일한 부분의 수정이 조금 어려웠습니다. <br />
+              그래서 저희 팀의 UX vision인 “방대한 기사를 보기 쉽게 전달한다.”를
+              중심으로, 이 부분의 완성을 최우선으로 해결해 나아갔습니다.
+            </p>
+          </div>
+        </div>
+        <div class="view_more_wrapper">
+          <ul class="view_more">
+            <li><a href="#">VIEW Project</a></li>
+            <li><a href="#">VIEW Prototype</a></li>
+          </ul>
+        </div>
+      </main>
+      <div class="slide_btn_wrapper">
+        <ul class="slide_btn">
+          <li class="back">
+            <a href="https://nmgvnm.github.io/Portfolio/PROJECT/01/">PREV</a>
+          </li>
+          <li class="next">
+            <a href="https://nmgvnm.github.io/Portfolio/PROJECT/03/">NEXT</a>
           </li>
         </ul>
-      </nav>
-      <!-- 메인 디바이스 이미지 -->
-      <div class="header_img">
-        <div class="video_wrapper">
-
-        </div>
       </div>
-    </header>
-    <!-- 제목 -->
-    <div class="title">
-      <h2>UI/UX Design</h2>
-      <h3>모바일 뉴스앱 UI/UX 리디자인</h3>
-      <p>( May - Jun  2022 )<br>
-        REDESIGN</p>
+      <!-- footer copyrights -->
+      <footer>
+        <p>© 2022 Design & Published By Yoonjin Lee. All Rights Reserved.</p>
+      </footer>
     </div>
-    <main>
-      <div class="main01">
-        <div class="design box">
-          <h2>01. Design</h2>
-          <ul class="design_txt content">
-            <li id="concept">
-              <h3>Concept</h3>
-              <p>
-               공차의 메뉴들을 강조하면서 심플한 레이아웃으로 리디자인 하였습니다. 
-               각 메뉴별로 시그니처 음료의 이미지를 삽입하고, GIF를 추가하여 생동감 있는 이미지를 연출하였습니다. 텍스트의 가독성을 위하여 행간의 크기와 폰트 사이즈를 조절하였습니다.
-              </p>
-            </li>
-            <li id="keyword">
-              <h3>Keyword</h3>
-              <ul class="keyBox">
-                <li>심플한</li>
-                <li>명확한</li>
-              </ul>
-            </li>
-            <li id="colorPalette">
-              <h3>Color Palette</h3>
-              <!-- 색상 -->
-              <ul class="colorBox">
-                <li>
-                  <div class="color1 color">color1</div>
-                  <p>#F05153</p>
-                </li>
-                <li>
-                  <div class="color2 color">color2</div>
-                  <p>#606060</p>
-                </li>
-                <li>
-                  <div class="color3 color">color3</div>
-                  <p>#F5F6F7</p>
-                </li>
-              </ul>
-            </li>
-            <li id="typography">
-              <h3>Typography</h3>
-              <!-- 한글폰트 -->
-              <div class="font_wrapper">
-                <!-- 영문폰트 -->
-                <section id="pretendard">
-                  <h5>Pretendard</h5>
-                  <ul class="font">
-                    <li>
-                      <h6>Aa</h6>
-                      <p>Thin</p>
-                    </li>
-                    <li>
-                      <h6>Aa</h6>
-                      <p>Light</p>
-                    </li>
-                    <li>
-                      <h6>Aa</h6>
-                      <p>Regular</p>
-                    </li>
-                    <li>
-                      <h6>Aa</h6>
-                      <p>SemiBlod</p>
-                    </li>
-                    <li>
-                      <h6>Aa</h6>
-                      <p>Bold</p>
-                    </li>
-                  </ul>
-                </section>
-              </div>
-            </li>
-            
-          </ul>
-        </div>
-      </div>
-      <div class="main02">
-        <div class="pubilsing box">
-          <h2>02. Pubilsing</h2>
-          <div class="pubilsing_txt content">
-            <div id="responsive">
-              <h3>Responsive</h3>
-              <ul id="device">
-                <li>
-                  <p>PC</p>
-                  <p>1920px</p>
-                </li>
-              </ul>
-            </div>
-            <div id="about">
-              <h3>About</h3>
-              <ul class="tag">
-                <li>#jQuery</li>
-                <li>#JavaScript</li>
-                <li>#웹표준</li>
-                <li>#API</li>
-                <li>#cssTransition</li>
-              </ul>
-            </div>
-            <div id="goal">
-              <h3>Goal</h3>
-              <p>JavaScript, jQuery 적용</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="main03">
-        <div class="problems_solution box">
-          <h2>03. Problems & Solution</h2>
-          <ul class="PS_txt content">
-            <li>
-              <h3></h3>
-              <p></p>
-            </li>
-            <li>
-              <h3></h3>
-              <p></p>
-            </li>
-            <li>
-              <h3></h3>
-              <p></p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="main04">
-        <div class="review box">
-          <h2>04. Review</h2>
-          <div class="review_txt content">
-            <P></P>
-          </div>
-        </div>
-      </div>
-    </main>
-    <div class="slide_btn_wrapper">
-      <ul class="slide_btn">
-        <li class="back"><a href="https://nmgvnm.github.io/Portfolio/PROJECT/01/">PREV</a></li>
-        <li class="next"><a href="https://nmgvnm.github.io/Portfolio/PROJECT/03/">NEXT</a></li>
-      </ul>
-    </div>
-    <div class="view_site_wrapper">
-      <ul class="view_site">
-        <li><a href="https://nmgvnm.github.io/Portfolio/GongCha" target="_blank"> PROTOTYPE <img src="../01/images/SVG/view_arrow.svg" alt="arrow">
-        </a></li>
-      </ul>
-    </div>
-    <!-- footer copyrights -->
-    <footer>
-      <p>© 2022 Design & Published By Yoonjin Lee. All Rights Reserved.</p>
-    </footer>
-  </div>
-</body>
+  </body>
 </html>
