@@ -203,7 +203,7 @@ header {height: 960px;  overflow: hidden;}
 }
 .main_box h2 {
   margin: 167px 0 83px 11.41vw;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 500;
 }
 
@@ -215,17 +215,17 @@ header {height: 960px;  overflow: hidden;}
   justify-content: space-between;
 }
 .main01 .inner p {
-  font-size: 29px;
+  font-size: 25px;
   font-weight: 300;
 }
 .main01 .inner h5 {
   padding: 25px;
-  font-size: 29px;
+  font-size: 25px;
   font-weight: 200;
   line-height: 1.4;
 }
 .main01 .inner .after h5 {
-  font-size: 44px;
+  font-size: 38px;
   font-weight: 400;
 }
 .main01 .inner .arrow {
@@ -246,8 +246,8 @@ header {height: 960px;  overflow: hidden;}
   font-size: 20px;
 }
 .main02 .inner .as-is_txt {
-  font-size: 29px;
-  line-height: 2.2;
+  font-size: 23px;
+  line-height: 2.5;
 }
 /* main03 - to-be */
 .main03 .inner{
@@ -276,7 +276,7 @@ header {height: 960px;  overflow: hidden;}
 .main03 .inner .to-be_txt {
   position: absolute;
   bottom: 0; left: 0;
-  font-size: 29px;
+  font-size: 23px;
   line-height: 3.625rem;
 }
 
@@ -295,7 +295,7 @@ header {height: 960px;  overflow: hidden;}
 
 /* main04 - progress */
 .main04 .inner {
-  font-size: 29px;
+  font-size: 23px;
   line-height: 3.625rem;
 }
 /* main05 - evaluation */
@@ -315,7 +315,7 @@ header {height: 960px;  overflow: hidden;}
 .main05::after {top: 0; left:50%; transform: translateX(-50%);}
 .main05::before {bottom: 0; left:50%; transform: translateX(-50%);}
 .main05 .inner_txt {
-  font-size: 29px;
+  font-size: 23px;
   font-weight: 300;
   line-height: 3.625rem;
 }
@@ -335,7 +335,7 @@ header {height: 960px;  overflow: hidden;}
   margin-bottom: 100px;
 }
 .main06 .inner {
-  font-size: 25px;
+  font-size: 21px;
   line-height: 2.938rem;
 }
 .main06 .inner p {
