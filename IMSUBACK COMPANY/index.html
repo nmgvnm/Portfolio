@@ -26,21 +26,33 @@
 
   <!-- jQuery.js -->
   <script src="../common/jquery-3.6.0.min.js"></script>
-  <!-- API -->
-  <script src="./script/kakao_API.js" defer></script>
   <!-- 내가 작성한 script.js -->
   <script src="./script/script.js" defer></script>
 </head>
 <body>
+  <!-- 스크롤 위치 -->
+  <!-- <div id="container">
+    <div id="log">0</div>
+  </div> -->
 <div class="container">
   <header>
    <nav>
-    <div class="menu">
-      <span>-</span>
-      <span>-</span>
-    </div>
-    <div class="logo">
-      <img src="./images/logo_white.svg" alt="logo_white">
+    <div class="nav_wrapper">
+      <div class="menu">
+        <span>-</span>
+        <span>-</span>
+      </div>
+      <div class="slide_menu_wrapper">
+        <ul class="slide_menu">
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">WORKS</a></li>
+          <li><a href="#">SERVIES</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </div>
+      <div class="logo">
+        <img src="./images/logo_white.svg" alt="logo_white">
+      </div>
     </div>
    </nav>
    <div class="video">
@@ -48,7 +60,7 @@
       THE WAY YOU TELL YOUR STORY <br>
       ONLINE CAN MAKE <br>
       ALL THE DIFFERENCE.</h2>
-      <video src="./images/header_video.mp4"></video>
+    <video src="./images/header_video.mp4" autoplay muted loop></video>
    </div>
   </header>
   <div class="about">
@@ -77,25 +89,26 @@
     </figure>
   </div>
   <div class="info">
-    <div class="hours info_box">
-      <img src="./images/info-1.png" alt="info_img1">
-      <h3>영업시간</h3>
-      <p>Monday – Friday<br>
-        10:00am – 6:30pm</p>
+    <div class="info_wrapper">
+      <div class="hours info_box">
+        <img src="./images/info-1.png" alt="info_img1">
+        <h3>영업시간</h3>
+        <p>Monday – Friday<br>
+          10:00am – 6:30pm</p>
+      </div>
+      <div class="inquiry info_box">
+        <img src="./images/info-2.png" alt="info_img2">
+        <h3>광고문의</h3>
+        <p>임수백컴퍼니는 지속적으로 광고주분들께 최고의 결과를 <br>서비스합니다.<br>
+          tel. (02) 6732-0924<br>
+          Mail. ceo@isbco.kr</p>
+      </div>
     </div>
-    <div class="inquiry info_box">
-      <img src="./images/info-2.png" alt="info_img2">
-      <h3>광고문의</h3>
-      <p>임수백컴퍼니는 지속적으로 광고주분들께 최고의 결과를 서비스합니다.<br>
-        tel. (02) 6732-0924<br>
-        Mail. ceo@isbco.kr</p>
-    </div>
-
   </div>
   <div id="map" style="width:414px;height:400px;"></div>
   <footer>
     <div class="logo">
-      <img src="./images/logo_dark.svg" alt="logo_dark">
+      <a href="#"><img src="./images/logo_dark.svg" alt="logo_dark"></a>
     </div>
     <div class="sns">
       <ul class="icon">
@@ -109,12 +122,13 @@
         사업자등록번호 : 610-87-00754</p>
     </div>
     <div class="copyright">
-      <p>Copyright © 2021. IMSUBAEK COMPANY All Rights Reserved.</p>
+      <p>Copyright © 2021. <br>IMSUBAEK COMPANY All Rights Reserved.</p>
     </div>
   </footer>
 </div>
 
 <!-- kakao map API -->
 <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=909866942f066b42e9270f69ec116f77"></script>
+<script src="./script/kakao_API.js"></script>
 </body>
 </html>
