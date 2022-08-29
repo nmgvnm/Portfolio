@@ -106,7 +106,6 @@ video {
 .about h2 {
   color: #464ea3;
   font-size: 28px;
-  font-family: '비트로 코어 OTF';
   font-family: 'SB 어그로';
   font-weight: 600;
   padding: 80px 0 30px;
@@ -118,8 +117,6 @@ video {
   width: 100%; 
   background-color: #f5f5f5;
   padding-top: 50px;
-  font-family: 'Montserrat';
-  font-family: '비트로 코어 OTF';
   font-family: 'SB 어그로';
   font-weight: 700;
   font-size: 1.2rem;
@@ -174,7 +171,7 @@ video {
   padding-bottom: 50px;
   border-bottom: 1px solid #d3d3d3;
 }
-footer {margin: 55px auto 15px; width: 330px; height: 325px; position: relative; font-family: 'Pretendard';}
+.footer_wrapper {margin: 55px auto 15px; width: 330px; height: 325px; position: relative; font-family: 'Pretendard'; }
 footer .logo  {width: 120px; top: 0; left: 0;}
 footer .icon {
   position: absolute;
