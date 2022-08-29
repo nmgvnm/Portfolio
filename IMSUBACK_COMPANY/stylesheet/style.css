@@ -1,5 +1,6 @@
 @charset "utf-8";
 * {box-sizing: border-box;}
+img {vertical-align: top;}
 
 .container {width: 414px; margin: 0 auto; overflow: hidden; }
 .slide_menu_wrapper {
@@ -7,7 +8,7 @@
  position: fixed;
  top: 0; left: 50%; transform: translateX(-50%);
  overflow: hidden;
-
+ display: none;
 }
 .slide_menu {
   overflow: hidden;
@@ -83,11 +84,13 @@ nav .logo {
 .video h2 {
   position: absolute;
   font-family: 'Montserrat';
+  font-family: 'SB 어그로';
   color: #fff;
   text-align: center;
-  top: 50%; left: 50%; transform: translate(-50%,-50%);
+  top: 50%; 
+  left: 50%; transform: translate(-50%,-50%);
   white-space: nowrap;
-  line-height: 2.688rem;
+  line-height: 1.5;
   font-size: 20px;
   font-weight: 600;
 }
@@ -103,18 +106,22 @@ video {
 .about h2 {
   color: #464ea3;
   font-size: 28px;
-  font-family: 'Montserrat';
+  font-family: '비트로 코어 OTF';
+  font-family: 'SB 어그로';
   font-weight: 600;
   padding: 80px 0 30px;
 }
-.about p{padding-bottom: 40px; font-family: 'Pretendard'; line-height: 2rem; font-size: 15px;}
-.about p span{ color: #464ea3; font-size: 17px;}
+.about p{padding-bottom: 40px; font-family: 'Pretendard'; line-height: 1.6; font-size: 18px;}
+.about p span{ color: #464ea3; font-size: 21px;}
 
 .main {
   width: 100%; 
   background-color: #f5f5f5;
   padding-top: 50px;
   font-family: 'Montserrat';
+  font-family: '비트로 코어 OTF';
+  font-family: 'SB 어그로';
+  font-weight: 700;
   font-size: 1.2rem;
 }
 
@@ -122,10 +129,26 @@ video {
   padding-bottom: 50px;
   width: 330px;
   margin: 0 auto;
+  position: relative;
+}
+
+.main figure::after {
+  content: '';
+  width: 330px; height: 2px;
+  background-color:rgba(204, 204, 204, 0.411);
+  position: absolute;
+  right: 0; bottom: 30px;
+}
+.main figure::before {
+  content: '';
+  width: 300px; height: 347px;
+  border: 3px solid #fff;
+  position: absolute;
+  left: 12px; top: 12px;
 }
 .main figure figcaption {
   text-align: right;
-  padding: 10px 0;
+  padding: 20px 0 0;
 }
 
 .info {
