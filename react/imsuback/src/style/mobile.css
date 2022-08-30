@@ -1,0 +1,13 @@
+@media (max-width:414px) {
+  .container {width: 100vw;}
+  .container > * {width: 100vw;}
+  .container .nav_wrapper {width: 100%;}
+  .container .active {width: 100%;}
+  .video h2 {font-size: 4.83vw;}
+
+
+  .about h2 {font-size: 6.76vw;}
+  .about p {font-size: 4.35vw;}
+  .about p span {font-size: 5.07vw;}
+  .main {font-size: 4.64vw;}
+}

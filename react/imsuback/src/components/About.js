@@ -1,6 +1,5 @@
 import React from "react";
-import "../assets/css/minireset.css";
-import "../style/Imsuback.css";
+
 
 const About = () => {
   return (

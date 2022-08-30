@@ -1,0 +1,185 @@
+@charset "utf-8";
+* {box-sizing: border-box;}
+
+.container {width: 414px; margin: 0 auto; overflow: hidden; }
+header {
+  position: relative;
+  width: 414px; height: 518px;
+  overflow: hidden;
+}
+header nav {
+  width: 100%; height: 45px;
+  position: fixed;
+  left: 0; top: 0;
+  z-index: 9999;
+}
+
+header nav .nav_wrapper {
+  width: 414px; height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+header nav .active {
+  background-color: #000;
+  width: 414px; height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+header nav .nav_wrapper .menu {
+  position: relative;
+  z-index: 9999999;
+  cursor: pointer;
+}
+header nav .nav_wrapper .menu span {
+  display: block;
+  width: 35px; height: 1px;
+  background-color: #e2e2e2;
+  margin: 10px 0; 
+  text-indent: -99999px;
+  transition: .5s;
+}
+header nav .nav_wrapper .logo {
+  width: 100px;
+}
+header .video {
+  width: inherit; height: inherit;
+}
+header .video video {
+  position: absolute;
+  top: 0; left: 0;
+  z-index: -1;
+  object-fit: cover;
+  max-width: none;
+  transform: translateX(-120px);
+  height: 518px;
+}
+header .video h2 {
+  position: absolute;
+  font-family: 'SBAggro';
+  color: #fff;
+  text-align: center;
+  top: 50%; 
+  left: 50%; transform: translate(-50%,-50%);
+  white-space: nowrap;
+  line-height: 1.5;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+.about {width: 100%; height: 500px; text-align: center;}
+.about h2 {
+  color: #464ea3;
+  font-size: 28px;
+  font-family: 'SBAggro';
+  font-weight: 600;
+  padding: 80px 0 30px;
+}
+.about p{padding-bottom: 40px; font-family: 'Pretendard'; line-height: 1.6; font-size: 18px;}
+.about p span{ color: #464ea3; font-size: 21px;}
+
+
+.main {
+  width: 100%; 
+  background-color: #f5f5f5;
+  padding-top: 50px;
+  font-family: 'SBAggro';
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.main figure {
+  padding-bottom: 50px;
+  width: 330px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main figure::after {
+  content: '';
+  width: 330px; height: 2px;
+  background-color:rgba(204, 204, 204, 0.411);
+  position: absolute;
+  right: 0; bottom: 30px;
+}
+.main figure::before {
+  content: '';
+  width: 300px; height: 347px;
+  border: 3px solid #fff;
+  position: absolute;
+  left: 12px; top: 12px;
+}
+.main figure figcaption {
+  text-align: right;
+  padding: 20px 0 0;
+}
+
+#map {
+  width: 414px; height: 400px;
+}
+
+.info {
+  font-family: 'Pretendard';
+  padding: 50px 0 ;
+}
+.info .info_wrapper {
+  width: 330px;
+  margin: 0 auto;
+}
+.info .info_wrapper .info_box h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 20px 0 10px;
+}
+.info .info_wrapper .info_box p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.info .info_wrapper .hours {
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #d3d3d3;
+}
+.footer_wrapper {margin: 55px auto 15px; width: 330px; height: 325px; position: relative; font-family: 'Pretendard'; }
+.footer_wrapper .logo  {width: 120px; top: 0; left: 0;}
+.footer_wrapper .sns .icon {
+  position: absolute;
+  display: flex;
+  right: 0 ; top: 0;
+  border-left: 2px solid #d3d3d3;
+}
+.footer_wrapper .sns .icon li {margin-left: 15px;}
+.footer_wrapper .sns .icon li:nth-child(1) {width: 20px; margin-left: 40px;}
+.footer_wrapper .sns .icon li:nth-child(2) {width: 35px;}
+
+.footer_wrapper .footer_info {line-height: 1.5;}
+.footer_wrapper .footer_info p:nth-child(1){
+  font-weight: 500;
+  position: absolute;
+  top: 80px; left: 0;
+}
+.footer_wrapper .footer_info p:nth-child(2) {
+  position: absolute;
+  top: 120px; left: 0;
+}
+
+.footer_wrapper .copyright {bottom: 0; left: 0; position: absolute; font-size: 0.9rem; line-height: 1.3;}
+
+@media (max-width:414px) {
+  .container {width: 100vw;}
+  .container > * {width: 100vw;}
+  .nav_wrapper {width: 100%;}
+  .video h2 {font-size: 4.83vw;}
+
+  .about h2 {font-size: 6.76vw;}
+  .about p {font-size: 4.35vw;}
+  .about p span {font-size: 5.07vw;}
+  .main {font-size: 4.64vw;}
+}

@@ -1,15 +1,13 @@
 import React from 'react';
-import "../assets/css/minireset.css";
-import "../style/Imsuback.css";
 import img1 from "../images/about.png";
 import img2 from "../images/work.png";
 import img3 from "../images/contact.png";
 
-const Main = () => {
+const Article = () => {
   return (
-    <div className="container">
+    <div className='container'>
       <div className="main">
-        <figure>
+      <figure>
           <img src={img1} alt="img1" />
           <figcaption>ABOUT</figcaption>
         </figure>
@@ -24,6 +22,6 @@ const Main = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Main;
+export default Article;
