@@ -1,14 +1,12 @@
 import React from "react";
-import ImsubackAbout from "./components/ImsubackAbout";
-import ImsubackHeader from "./components/ImsubackHeader";
-import Main from "./components/main";
+import About from "./components/About";
+import Header from "./components/Header";
 
 function App() {
   return (
    <div>
-    <ImsubackHeader />
-    <ImsubackAbout />
-    <Main />
+    <Header />
+    <About />
    </div>
   );
 }

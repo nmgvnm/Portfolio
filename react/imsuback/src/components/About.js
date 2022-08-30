@@ -2,7 +2,7 @@ import React from "react";
 import "../assets/css/minireset.css";
 import "../style/Imsuback.css";
 
-const ImsubackAbout = () => {
+const About = () => {
   return (
     <div className="container">
       <div className="about">
@@ -25,4 +25,4 @@ const ImsubackAbout = () => {
   );
 };
 
-export default ImsubackAbout;
+export default About;

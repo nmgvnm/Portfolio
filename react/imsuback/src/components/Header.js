@@ -5,7 +5,7 @@ import video from "../images/header_video.mp4"
 import "../style/Imsuback.css"
 
 
-const ImsubackHeader = () => {
+const Header = () => {
   return (
     <div className="container">
       <header>
@@ -30,4 +30,4 @@ const ImsubackHeader = () => {
   );
 };
 
-export default ImsubackHeader;
+export default Header;
