@@ -3,14 +3,14 @@
 img {vertical-align: top;}
 
 .container {width: 414px; margin: 0 auto; overflow: hidden; }
-.slide_menu_wrapper {
+header .slide_menu_wrapper {
  width: 414px; height: 100vh;
  position: fixed;
  top: 0; left: 50%; transform: translateX(-50%);
  overflow: hidden;
- display: none;
+ /* display: none; */
 }
-.slide_menu {
+header .slide_menu_wrapper .slide_menu {
   overflow: hidden;
   position: absolute;
   left: -414px;
@@ -24,17 +24,19 @@ img {vertical-align: top;}
   transition: .5s;
   opacity: 0;
 }
-.slide_menu.active {
-  left: 50%; transform: translateX(-50%);
-  opacity: 1;
-}
-.slide_menu a {
+
+header .slide_menu_wrapper .slide_menu a {
   color: #fff;
   display: block;
   padding: 10px 30px;
   white-space:nowrap;
-
 }
+
+header .slide_menu_wrapper .slide_menu_active {
+  left: 50%; transform: translateX(-50%);
+  opacity: 1;
+}
+
 header {
   position: relative;
   width: 414px; height: 518px;

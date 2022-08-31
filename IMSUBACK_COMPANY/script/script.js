@@ -1,7 +1,7 @@
-/* $('.nav_wrapper .menu').on('click', () => {
+$('.nav_wrapper .menu').on('click', () => {
   $('.nav_wrapper .menu').toggleClass('click');
   $('.slide_menu').toggleClass('active');
-}) */
+})
 
 // 스크롤위치
 /* $(window).scroll(function () {

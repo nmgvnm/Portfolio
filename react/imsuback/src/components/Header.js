@@ -13,17 +13,24 @@ const Header = () => {
   useEffect(() => {
     window.addEventListener('scroll', updateScroll);
   });
-  
 
   return (
     <div className="container">
       <header>
         <nav>
-          <div className={scrollPosition < 400 ? "nav_wrapper" : "active"}>
+          <div className={scrollPosition < 400 ? "nav_wrapper_origin" : "nav_wrapper_change"}>
             <div className="menu">
               <span>-</span>
               <span>-</span>
             </div>
+            {/* <div class="slide_menu_wrapper">
+              <ul class="slide_menu">
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">WORKS</a></li>
+                <li><a href="#">SERVIES</a></li>
+                <li><a href="#">CONTACT US</a></li>
+              </ul>
+            </div> */}
             <div className="logo">
               <a href="#"><img src={logo} /></a>
             </div>
