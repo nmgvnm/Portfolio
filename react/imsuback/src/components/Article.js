@@ -1,22 +1,20 @@
 import React from 'react';
-import img1 from "../images/about.png";
-import img2 from "../images/work.png";
-import img3 from "../images/contact.png";
 
 const Article = () => {
+  const path = process.env.PUBLIC_URL;
   return (
     <div className='container'>
       <div className="main">
       <figure>
-          <img src={img1} alt="img1" />
+          <img src={path + '/images/about.png'} alt="img1" />
           <figcaption>ABOUT</figcaption>
         </figure>
         <figure>
-          <img src={img2} alt="img2" />
+          <img src={path + '/images/work.png'} alt="img2" />
           <figcaption>WORK</figcaption>
         </figure>
         <figure>
-          <img src={img3} alt="img3" />
+          <img src={path + '/images/contact.png'} alt="img3" />
           <figcaption>CONTACT US</figcaption>
         </figure>
       </div>

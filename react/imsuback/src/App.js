@@ -4,7 +4,6 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Article from "./components/Article";
 import Info from "./components/Info";
-// import Map from "./components/Map";
 import Footer from "./components/Footer";
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
     <About />
     <Article />
     <Info />
-    {/* <Map /> */}
     <Footer />
    </div>
   );

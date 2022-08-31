@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
+import logo from "../images/logo_white.svg";
+import video from "../images/header_video.mp4";
 import "../style/font.css"
 import "../style/Imsuback.scss";
 import "../style/mobile.css";
+import "../assets/css/style.scss"
 
-const Header = () => {
-  const path = process.env.PUBLIC_URL;
-
+const Ex2 = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const updateScroll = () => {
     setScrollPosition(window.scrollY || document.documentElement.scrollTop);
@@ -25,12 +26,12 @@ const Header = () => {
       <header>
         <nav>
           <div className={scrollPosition < 400 ? "nav_wrapper_origin" : "nav_wrapper_change"}>
-            <div className={isOpen ? "menu_active" : "menu"} onClick={()=>toggleMenu()}>
+            <div className="menu" onClick={()=>toggleMenu()}>
               <span>-</span>
               <span>-</span>
             </div>
-            <div class={isOpen ? "slide_menu_wrapper_none" : "slide_menu_wrapper"}>
-              <ul class={isOpen ? "slide_menu_active" : "slide_menu"}>
+            <div class="slide_menu_wrapper">
+              <ul class={isOpen ? "slide_menu" : "slide_menu_active"}>
                 <li><a href="#">ABOUT</a></li>
                 <li><a href="#">WORKS</a></li>
                 <li><a href="#">SERVIES</a></li>
@@ -38,17 +39,17 @@ const Header = () => {
               </ul>
             </div>
             <div className="logo">
-              <a href="#"><img src={path + '/images/logo_white.svg'} /></a>
+              <a href="#"><img src={logo} /></a>
             </div>
           </div>
         </nav>
         <div className="video">
           <h2>We value the brand the most</h2>
-          <video src={path + '/images/header_video.mp4'} autoPlay muted loop></video>
+          <video src={video} autoPlay muted loop></video>
         </div>
       </header>
     </div>
   );
 };
 
-export default Header;
+export default Ex2;

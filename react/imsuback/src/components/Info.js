@@ -1,15 +1,14 @@
 import React from "react";
-import info1 from "../images/info-1.png";
-import info2 from "../images/info-2.png";
 
 
 const Info = () => {
+  const path = process.env.PUBLIC_URL;
   return (
     <div className="container">
       <div className="info">
         <div className="info_wrapper">
           <div className="hours info_box">
-            <img src={info1} alt="info_img1" />
+            <img src={path + "/images/info-1.png"} alt="info_img1" />
             <h3>영업시간</h3>
             <p>
               Monday – Friday
@@ -18,7 +17,7 @@ const Info = () => {
             </p>
           </div>
           <div className="inquiry info_box">
-            <img src={info2} alt="info_img2" />
+            <img src={path + "/images/info-2.png"} alt="info_img2" />
             <h3>광고문의</h3>
             <p>
               임수백컴퍼니는 지속적으로 광고주분들께 최고의 결과를 <br />
