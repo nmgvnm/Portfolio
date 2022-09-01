@@ -91,3 +91,25 @@
   font-style: normal;
   font-weight: 400;
 }
+
+/* sb 어그로 */
+@font-face {
+  font-family: 'SBAggro';
+  src: url(../common/font/SBAggroLight.woff) format('woff');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'SBAggro';
+  src: url(../common/font/SBAggroMedium.woff) format('woff');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'SBAggro';
+  src: url(../common/font/SBAggroBold.woff) format('woff');
+  font-style: normal;
+  font-weight: 700;
+}

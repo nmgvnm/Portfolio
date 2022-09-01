@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+.header_img .img_wrapper {
+  display: flex;
+  position: absolute;
+  top: 150px; left: 50%; transform: translateX(-50%);
+}
+.header_img .img_wrapper li {
+  width: fit-content;
+  height: 497.58px;
+  border: 7px solid #000;
+  border-radius: 20px;
+  margin: 0 20px;
+  overflow: hidden;
+}
+.header_img .img_wrapper li:nth-child(1) {
+  transform: translateY(20px);
+}
+.header_img .img_wrapper li:nth-child(1):hover img {
+  animation: mobile 10s linear;
+}
+@keyframes mobile {
+  100% {
+    transform: translateY(-1411px);
+  }
+}
+.header_img .img_wrapper li:nth-child(2) {transform: translateY(-60px);}
+.header_img .img_wrapper li:nth-child(3) {transform: translateY(50px);}
+.header_img .img_wrapper img {
+  width: 230px;
+  position: initial;
+}
+
+/* title 위치 값 수정 */
+.title h3 {bottom: 40px;}
+.title p { bottom: 40px;}
+
+.main01 .design .design_txt #colorPalette .colorBox .color1 {background-color: #464ea3; border: 1px solid var(--main-color);}
+.main01 .design .design_txt #colorPalette .colorBox .color2 {background-color: #f5f5f5; border: 1px solid var(--main-color);}
+
+
+/* Typography css */
+.main01 .design .design_txt #typography #kor #pretendard *{font-family: 'Pretendard';}
+.main01 .design .design_txt #typography #pretendard .font li {
+  width: 190px;
+}
+.main01 .design .design_txt #typography #eng #sbAggro * {font-family: 'SBAggro';}

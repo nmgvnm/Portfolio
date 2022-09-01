@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/react/imsuback/build/static/css/main.3c7f818c.css",
-    "main.js": "/Portfolio/react/imsuback/build/static/js/main.ffe5dc20.js",
+    "main.js": "/Portfolio/react/imsuback/build/static/js/main.e2357c8c.js",
     "static/js/787.6ccee37d.chunk.js": "/Portfolio/react/imsuback/build/static/js/787.6ccee37d.chunk.js",
     "static/media/PretendardVariable.woff2": "/Portfolio/react/imsuback/build/static/media/PretendardVariable.665f232b25bf70832e04.woff2",
     "static/media/SBAggroBold.woff": "/Portfolio/react/imsuback/build/static/media/SBAggroBold.17f25318a67d1cd10b8c.woff",
@@ -9,11 +9,11 @@
     "static/media/SBAggroLight.woff": "/Portfolio/react/imsuback/build/static/media/SBAggroLight.84cc0e4909adca1b3c5e.woff",
     "index.html": "/Portfolio/react/imsuback/build/index.html",
     "main.3c7f818c.css.map": "/Portfolio/react/imsuback/build/static/css/main.3c7f818c.css.map",
-    "main.ffe5dc20.js.map": "/Portfolio/react/imsuback/build/static/js/main.ffe5dc20.js.map",
+    "main.e2357c8c.js.map": "/Portfolio/react/imsuback/build/static/js/main.e2357c8c.js.map",
     "787.6ccee37d.chunk.js.map": "/Portfolio/react/imsuback/build/static/js/787.6ccee37d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3c7f818c.css",
-    "static/js/main.ffe5dc20.js"
+    "static/js/main.e2357c8c.js"
   ]
 }

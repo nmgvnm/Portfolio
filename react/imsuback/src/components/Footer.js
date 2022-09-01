@@ -1,10 +1,10 @@
 import React from "react";
 
 const Footer = () => {
+
   const path = process.env.PUBLIC_URL;
   return (
     <div className="container">
-      <div id="map"style={{width:'414px', height:'400px', backgroundColor : '#ddd'}}></div>
       <footer>
         <div className="footer_wrapper">
           <div className="logo">

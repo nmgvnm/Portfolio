@@ -5,6 +5,7 @@ import About from "./components/About";
 import Article from "./components/Article";
 import Info from "./components/Info";
 import Footer from "./components/Footer";
+import KakaoMap from "./components/KakaoMap";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <About />
     <Article />
     <Info />
+    <KakaoMap />
     <Footer />
    </div>
   );
