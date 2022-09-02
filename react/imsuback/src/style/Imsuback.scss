@@ -49,7 +49,7 @@ body {position: relative;}
 	background-color: #e2e2e2;
 	margin: 10px 0;
 	text-indent: -99999px;
-	transition: .5s;
+	transition: .2s;
 };
 
 .menu_active {
@@ -134,20 +134,7 @@ header {
 		@include slideA();
 	}
  }
- /* @mixin slideMenuWrapper {
-	width: 414px; height: 100vh;
-	position: fixed;
-	top: 0; left: -414px;
-	overflow: hidden;
-	background-color: teal;
-	.slide_menu {
-		@include slideMenu();
-	}
- }
- .slide_menu_wrapper {
-	@include slideMenuWrapper();
 
- } */
  .slide_menu_wrapper_none {
 	width: 414px; height: 100vh;
 	position: fixed;
@@ -167,7 +154,7 @@ header {
  .slide_menu_wrapper {
 	width: 414px; height: 100vh;
 	position: fixed;
-	top: 0; left: 0;
+	top: 0; left: -414px;
 	opacity: 0;
 	overflow: hidden;
 	.slide_menu {

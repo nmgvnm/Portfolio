@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio/react/imsuback/build/static/css/main.3c7f818c.css",
-    "main.js": "/Portfolio/react/imsuback/build/static/js/main.e2357c8c.js",
+    "main.css": "/Portfolio/react/imsuback/build/static/css/main.53f8698d.css",
+    "main.js": "/Portfolio/react/imsuback/build/static/js/main.c8047dec.js",
     "static/js/787.6ccee37d.chunk.js": "/Portfolio/react/imsuback/build/static/js/787.6ccee37d.chunk.js",
     "static/media/PretendardVariable.woff2": "/Portfolio/react/imsuback/build/static/media/PretendardVariable.665f232b25bf70832e04.woff2",
     "static/media/SBAggroBold.woff": "/Portfolio/react/imsuback/build/static/media/SBAggroBold.17f25318a67d1cd10b8c.woff",
     "static/media/SBAggroMedium.woff": "/Portfolio/react/imsuback/build/static/media/SBAggroMedium.3cdcd13be6a8aa5bd0f6.woff",
     "static/media/SBAggroLight.woff": "/Portfolio/react/imsuback/build/static/media/SBAggroLight.84cc0e4909adca1b3c5e.woff",
     "index.html": "/Portfolio/react/imsuback/build/index.html",
-    "main.3c7f818c.css.map": "/Portfolio/react/imsuback/build/static/css/main.3c7f818c.css.map",
-    "main.e2357c8c.js.map": "/Portfolio/react/imsuback/build/static/js/main.e2357c8c.js.map",
+    "main.53f8698d.css.map": "/Portfolio/react/imsuback/build/static/css/main.53f8698d.css.map",
+    "main.c8047dec.js.map": "/Portfolio/react/imsuback/build/static/js/main.c8047dec.js.map",
     "787.6ccee37d.chunk.js.map": "/Portfolio/react/imsuback/build/static/js/787.6ccee37d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c7f818c.css",
-    "static/js/main.e2357c8c.js"
+    "static/css/main.53f8698d.css",
+    "static/js/main.c8047dec.js"
   ]
 }
