@@ -1,14 +1,17 @@
 @charset "utf-8";
 @media (min-width:980px) {
   /* header css */
-  header .slider .button {display: block;}
+
+  .swiper-button-prev, .swiper-rtl .swiper-button-next { display: block;}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {  display: block; }
+
   header .top_nav .nav_wrapper #drop_menu_wrapper {display: none;} 
 
-  header {
-    height: 851px;
+  .slide_wrapper {
+    height: 918px;
   }
   header .top_nav {
-    background-color: var(--opacity-color);
+    background-color: rgba(0, 0, 0, 0);
   }
   header .top_nav .nav_wrapper {height: 80px; padding: 0 50px; border-bottom: 1px rgba(225, 225, 225, 0.2) solid;}
    header .top_nav .nav_wrapper #menu {display: block;}
@@ -39,34 +42,22 @@
     width: 165px; height: 49px;
     background: url(../images/icon/mobile_top_logo.svg) no-repeat 50% / contain;
   }
-  header .slider {height: 771px; position: relative;}
-  header .slider .slider_txt_box { width: 760px; height: 358px; top: 18vh;}
-  header .slider .slider_txt_box h2 {
+  header .swiper-wrapper {height: 918px; }
+  header .swiper-wrapper .slider_txt_box { width: 760px; height: 358px; top: 30vh;}
+  header .swiper-wrapper .slider_txt_box h2 {
     font-size: 3.75rem;
     line-height: 4.5rem;
   }
-  header .slider .slider_txt_box p{
+  header .swiper-wrapper .slider_txt_box p{
     font-size: 1.25rem;
     padding: 20px 0 60px;
   }
-  header .slider .slider_txt_box .more_button {
+  header .swiper-wrapper .slider_txt_box .more_button {
     width: 153px; height: 54px;
     font-size: 1rem;
     line-height: 52px;
   }
  
-  header .slider .button #right {
-    position: absolute;
-    top: 50%; right: 0;
-    transform: translate(0,-50%);
-    
-  }
-  header .slider .button #left {
-    position: absolute;
-    top: 50%; left: 0;
-    transform: translate(0,-50%);
-  }
-  header .slider .circle_icon {bottom: 30px;}
 
 
 

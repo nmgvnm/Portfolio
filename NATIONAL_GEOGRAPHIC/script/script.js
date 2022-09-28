@@ -71,3 +71,22 @@ const countSupport = setInterval(() => {
   supportBox.innerHTML = new Intl.NumberFormat().format(countSpp) + `%`;
 }
 }, 40);
+
+
+// const 내가정하는이름 = new Swiper('대상', {});
+  // const swiper1 = new Swiper('.swiper',{}) 기본값
+  const swiper = new Swiper('.swiper', {
+    // direction: 'vertical', 세로 방향 슬라이드
+    loop: true,// 무한 반복
+
+    // 하단 pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // 좌 우 클릭 버튼
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });

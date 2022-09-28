@@ -5,27 +5,32 @@
   header {
     height: 918px;
   }
-  header .slider {height: 838px;}
-  header .slider .slider_txt_box { 
+  header .swiper-wrapper .slider_txt_box { 
     width: 1000px; height: 388px; position: relative;
-    top: 50%; left: 50%;
+    top: 55%; left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
   }
-  header .slider .slider_txt_box h2 {
+  header .swiper-wrapper .slider_txt_box h2 {
     font-size: 4.075rem;
     line-height: 4.89rem;
   }
-  header .slider .slider_txt_box p{
+  header .swiper-wrapper .slider_txt_box p{
     font-size: 1.5rem;
   }
-  header .slider .slider_txt_box .more_button {
+  header .swiper-wrapper .slider_txt_box .more_button {
     position: absolute;
     bottom: 0; left: 50%;
     transform: translate(-50%);
     width: 200px; height: 60px; 
     font-size: 1.5rem;
     overflow: hidden;
+    transition: .5s;
+  }
+  header .swiper-wrapper .slider_txt_box .more_button:hover {
+    background-color: #fff;
+    color: #000;
+    font-weight: 500;
   }
   header .top_nav .nav_wrapper #menu li {
     height: 80px;
