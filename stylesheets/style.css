@@ -468,7 +468,7 @@ main .about .about_btn_wrapper .about_me_btn {
   display: flex;
   justify-content: center;
 }
-main .about .about_btn_wrapper .about_me_btn p {
+main .about .about_btn_wrapper .about_me_btn p a {
   transition: all 0.3s;
   width: 300px;
   padding: 20px;
@@ -480,10 +480,10 @@ main .about .about_btn_wrapper .about_me_btn p {
   font-size: 1.5rem;
   cursor: pointer;
 }
-main .about .about_btn_wrapper .about_me_btn p:first-child {
+main .about .about_btn_wrapper .about_me_btn p a:first-child {
   margin-right: 100px;
 }
-main .about .about_btn_wrapper .about_me_btn p:hover {
+main .about .about_btn_wrapper .about_me_btn p a:hover {
   background-color: #202527;
   color: #fff;
 }
